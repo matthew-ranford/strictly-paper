@@ -22,44 +22,27 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex justify-around items-center pt-6 pb-6 px-20">
-        <ul className="hidden lg:flex gap-10 text-xl">
+      <nav className="flex justify-around items-center pt-6 pb-6 px-0 lg:px-20 2xl:px-44">
+        <ul className="hidden lg:flex gap-10 text-xl 2xl:text-3xl">
           {leftNavLinks.map((link, index) => (
             <li className="list-none" key={index}>
               <a href={link.href}>{link.text}</a>
             </li>
           ))}
         </ul>
-        <h1 className="text-center text-7xl">
+        <h1 className="text-center text-6xl lg:text-7xl 2xl:text-8xl">
           <span className="block">Strictly</span>
           <span className="block">Paper</span>
         </h1>
-        <ul className="hidden lg:flex gap-10 text-xl">
+        <ul className="hidden lg:flex gap-10 text-xl 2xl:text-3xl">
           {rightNavLinks.map((link, index) => (
             <li className="list-none" key={index}>
               <a href={link.href}>{link.text}</a>
             </li>
           ))}
         </ul>
-        <div className="lg:hidden flex">
-          <button onClick={handleMenuClick}>
-            <span
-              className={`bg-zinc-900 block transition-all duration-1000 ease-out
-         h-1 rounded-2xl ${
-           isOpen ? 'w-14 rotate-45 translate-y-1.5' : 'w-14 -translate-y-0.5'
-         }`}
-            ></span>
-
-            <span
-              className={`bg-zinc-900 block transition-all duration-1000 ease-out
-         h-1 rounded-2xl ml-auto ${
-           isOpen ? 'w-14 -rotate-45 -translate-y-1.5' : 'w-8 translate-y-0.5'
-         }`}
-            ></span>
-          </button>
-        </div>
         <ul
-          className={`absolute lg:hidden w-full h-full flex flex-col items-right gap-4 my-16 px-4 text-right text-7xl ${
+          className={`absolute lg:hidden w-full flex flex-col items-right gap-4 my-16 px-4 text-right text-5xl sm:text-6xl ${
             isOpen ? 'top-36' : 'hidden'
           }`}
         >
@@ -69,6 +52,23 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <div className="lg:hidden flex">
+          <button onClick={handleMenuClick}>
+            <span
+              className={`bg-zinc-950 block transition-all duration-700 ease-out
+         h-1 rounded-2xl ${
+           isOpen ? 'w-14 rotate-45 translate-y-1.5' : 'w-14 -translate-y-0.5'
+         }`}
+            ></span>
+
+            <span
+              className={`bg-zinc-950 block transition-all duration-700 ease-out
+         h-1 rounded-2xl ml-auto ${
+           isOpen ? 'w-14 -rotate-45 -translate-y-1.5' : 'w-8 translate-y-0.5'
+         }`}
+            ></span>
+          </button>
+        </div>
       </nav>
     </>
   )
