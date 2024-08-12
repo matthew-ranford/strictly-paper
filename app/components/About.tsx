@@ -24,7 +24,7 @@ export default function About() {
             Who We Are!
           </h1>
         </div>
-        <div className="pt-12 flex justify-end text-zinc-300 text-balance text-right lg:text-left text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight">
+        <div className="pt-10 flex justify-end text-zinc-300 text-balance text-right lg:text-left text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight">
           <p className="max-w-3xl 2xl:max-w-5xl bigger-screens:max-w-7xl ps-4 pe-8 lg:pe-20 bigger-screens:mr-10">
             John provides award winning wallpaper hanging to both residential
             and commercial customers, in Wellington and the surrounding region.

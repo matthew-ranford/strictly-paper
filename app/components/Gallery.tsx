@@ -12,13 +12,16 @@ export default function Gallery() {
 
   return (
     <>
-      <main id="gallery">
-        <div className="flex justify-end">
-          <div className="pt-28">
-            <h1 className="text-left text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight pe-32 block">
-              Our <span className="block">Work!</span>
+      <main id="gallery" className="pb-10">
+        <div className="lg:flex lg:justify-end">
+          <div className="pt-8 lg:pt-36 bigger-screens:pt-[40rem] pb-6">
+            <h1 className="text-left text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight px-6 lg:px-0 lg:pe-32 2xl:pe-28 bigger-screens:pe-4 block bigger-screens:inline-block">
+              Our{' '}
+              <span className="lg:block bigger-screens:inline-block">
+                Work!
+              </span>
             </h1>
-            <p className="pt-6 ps-4 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight text-balance max-w-xs block">
+            <p className="text-left pt-10 px-8 lg:px-0 2xl:px-6 pb-4 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight text-balance lg:max-w-xs 2xl:max-w-sm bigger-screens:max-w-2xl block">
               Whether you&apos;re looking for inspiration or seeking the perfect
               design to elevate your home!{' '}
               <span className="block pt-4">
@@ -27,7 +30,10 @@ export default function Gallery() {
               </span>
             </p>
           </div>
-          <ImagesSlider className="h-[38rem] w-[54.7rem]" images={images}>
+          <ImagesSlider
+            className="h-[40rem] lg:h-[38rem] lg:w-[54.7rem] 2xl:h-[51rem] 2xl:w-[62.5rem] bigger-screens:h-[80rem] bigger-screens:w-[103rem]"
+            images={images}
+          >
             <motion.div
               initial={{
                 opacity: 0,
