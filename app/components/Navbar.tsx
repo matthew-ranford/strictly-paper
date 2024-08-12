@@ -26,7 +26,7 @@ export default function Navbar() {
       <nav className="flex justify-around items-center pt-2 pb-6 px-0 lg:px-20 2xl:px-10 bigger-screens:px-14 navbar-container">
         <ul className="hidden lg:flex gap-16 2xl:gap-20 bigger-screens:gap-10 text-xl 2xl:text-2xl bigger-screens:text-3xl">
           {leftNavLinks.map((link, index) => (
-            <li className="list-none" key={index}>
+            <li className="list-none nav-link" key={index}>
               <a href={link.href}>{link.text}</a>
             </li>
           ))}
@@ -37,13 +37,13 @@ export default function Navbar() {
         </h1>
         <ul className="hidden lg:flex gap-10 text-xl 2xl:text-2xl bigger-screens:text-3xl">
           {rightNavLinks.map((link, index) => (
-            <li className="list-none" key={index}>
+            <li className="list-none nav-link" key={index}>
               <a href={link.href}>{link.text}</a>
             </li>
           ))}
         </ul>
         <ul
-          className={`absolute lg:hidden w-full flex flex-col items-right gap-4 my-16 px-4 text-right text-5xl sm:text-6xl ${
+          className={`absolute lg:hidden w-full flex flex-col items-right gap-4 px-4 text-right text-5xl sm:text-6xl bg-zinc-200 ${
             isOpen ? 'top-36' : 'hidden'
           }`}
         >
