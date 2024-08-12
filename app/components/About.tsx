@@ -3,13 +3,13 @@
 import Image from 'next/image'
 import aboutImage from '../../public/images/about-image.png'
 
+// Margin for the main class
+// mt-10 lg:mt-20 2xl:mt-24 bigger-screens:mt-32
+
 export default function About() {
   return (
     <>
-      <main
-        id="about"
-        className="relative mt-10 lg:mt-20 2xl:mt-24 bigger-screens:mt-32"
-      >
+      <main id="about" className="bg-zinc-900 pb-10 relative">
         <div>
           <Image
             src={aboutImage}
@@ -24,8 +24,8 @@ export default function About() {
             Who We Are!
           </h1>
         </div>
-        <div className="pt-12 flex justify-end text-balance text-right lg:text-left text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight">
-          <p className="max-w-3xl 2xl:max-w-5xl bigger-screens:max-w-7xl pe-8 lg:pe-20 bigger-screens:mr-10">
+        <div className="pt-12 flex justify-end text-zinc-300 text-balance text-right lg:text-left text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight">
+          <p className="max-w-3xl 2xl:max-w-5xl bigger-screens:max-w-7xl ps-4 pe-8 lg:pe-20 bigger-screens:mr-10">
             John provides award winning wallpaper hanging to both residential
             and commercial customers, in Wellington and the surrounding region.
             <span className="block pt-6">
