@@ -23,8 +23,8 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex justify-around items-center pt-2 pb-6 px-0 lg:px-20 2xl:px-44 navbar-container">
-        <ul className="hidden lg:flex gap-16 2xl:gap-10 text-xl 2xl:text-3xl">
+      <nav className="flex justify-around items-center pt-2 pb-6 px-0 lg:px-20 2xl:px-10 bigger-screens:px-14 navbar-container">
+        <ul className="hidden lg:flex gap-16 2xl:gap-20 bigger-screens:gap-10 text-xl 2xl:text-2xl bigger-screens:text-3xl">
           {leftNavLinks.map((link, index) => (
             <li className="list-none" key={index}>
               <a href={link.href}>{link.text}</a>
@@ -35,7 +35,7 @@ export default function Navbar() {
           <span className="block">Strictly</span>
           <span className="block">Paper</span>
         </h1>
-        <ul className="hidden lg:flex gap-10 text-xl 2xl:text-3xl">
+        <ul className="hidden lg:flex gap-10 text-xl 2xl:text-2xl bigger-screens:text-3xl">
           {rightNavLinks.map((link, index) => (
             <li className="list-none" key={index}>
               <a href={link.href}>{link.text}</a>

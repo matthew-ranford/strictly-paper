@@ -12,7 +12,11 @@ const config: Config = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'bigger-screens': { min: '1800px' },
+      },
+    },
   },
   plugins: [addVariablesForColors],
 }
