@@ -12,6 +12,7 @@ export default function Navbar() {
   ]
 
   const rightNavLinks = [
+    { href: '#gallery', text: 'Gallery' },
     { href: '#reviews', text: 'Reviews' },
     { href: '#contact', text: 'Contact Us' },
   ]
@@ -22,15 +23,15 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex justify-around items-center pt-6 pb-6 px-0 lg:px-20 2xl:px-44">
-        <ul className="hidden lg:flex gap-10 text-xl 2xl:text-3xl">
+      <nav className="flex justify-around items-center pt-2 pb-6 px-0 lg:px-20 2xl:px-44 navbar-container">
+        <ul className="hidden lg:flex gap-16 2xl:gap-10 text-xl 2xl:text-3xl">
           {leftNavLinks.map((link, index) => (
             <li className="list-none" key={index}>
               <a href={link.href}>{link.text}</a>
             </li>
           ))}
         </ul>
-        <h1 className="text-center text-6xl lg:text-7xl 2xl:text-8xl">
+        <h1 className="text-amber-600 text-center text-6xl lg:text-7xl 2xl:text-8xl">
           <span className="block">Strictly</span>
           <span className="block">Paper</span>
         </h1>
