@@ -7,12 +7,12 @@ export default function Services() {
   return (
     <>
       <main id="services" className="bigger-screens:mt-32 pb-4">
-        <div className="text-right pt-8 lg:pt-12 pe-16 bigger-screens:pe-52">
+        <div className="text-right pt-8 lg:pt-12 pe-20 bigger-screens:pe-52">
           <h1 className="text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
             Services We Offer!
           </h1>
         </div>
-        <div className="mt-14 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-7xl mx-auto w-full">
+        <div className="mt-14 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl mx-auto w-5/6 lg:w-full">
           <WobbleCard containerClassName="col-span-1 max-h-[100px] lg:max-h-[250px] lg:mt-20 bg-amber-600">
             <h2 className="text-center text-xl lg:text-3xl text-zinc-950">
               We work Nationwide!
@@ -40,7 +40,7 @@ export default function Services() {
               width={800}
               height={500}
               alt="linear demo image"
-              className="absolute -right-4 top-0 lg:-right-[30%] grayscale filter -bottom-10 object-contain hidden lg:block"
+              className="absolute -right-4 top-2 lg:-right-[38%] grayscale filter -bottom-10 object-contain hidden lg:block"
             />
           </WobbleCard>
           <WobbleCard
@@ -65,13 +65,12 @@ export default function Services() {
               width={800}
               height={500}
               alt="linear demo image"
-              className="absolute -right-4 top-0 lg:-right-[30%] grayscale filter -bottom-10 object-contain hidden lg:block"
+              className="absolute -right-4 top-2 lg:-right-[38%] grayscale filter -bottom-10 object-contain hidden lg:block"
             />
           </WobbleCard>
           <WobbleCard containerClassName="col-span-1 max-h-[250px] lg:mt-20 bg-amber-600">
             <h2 className="text-center text-xl lg:text-3xl text-zinc-950">
               Contact us today!
-              <span className="pt-4 block">We are always happy to help!</span>
             </h2>
           </WobbleCard>
         </div>
