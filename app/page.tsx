@@ -2,6 +2,7 @@ import About from './components/About'
 import Gallery from './components/Gallery'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
+import Reviews from './components/Reviews'
 import Services from './components/Services'
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Services />
       <Gallery />
+      <Reviews />
     </>
   )
 }
