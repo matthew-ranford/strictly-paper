@@ -18,7 +18,7 @@ export default function Gallery() {
 
   return (
     <>
-      <main id="gallery" className="pb-10">
+      <main id="gallery" className="pb-10 mt-10 bg-zinc-900">
         <div className="lg:flex lg:justify-end">
           <div className="pt-8 lg:pt-36 bigger-screens:pt-[40rem] pb-6">
             <h1 className="text-left text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight px-6 lg:px-0 lg:pe-32 2xl:pe-28 bigger-screens:pe-4 block bigger-screens:inline-block">
