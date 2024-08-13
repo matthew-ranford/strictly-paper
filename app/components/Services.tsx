@@ -6,15 +6,15 @@ import { WobbleCard } from '@/components/ui/wobble-card'
 export default function Services() {
   return (
     <>
-      <main id="services" className="bigger-screens:mt-32 pb-4">
-        <div className="text-right pt-8 lg:pt-12 pe-20 bigger-screens:pe-52">
+      <main id="services" className="2xl:mt-14 bigger-screens:mt-32 pb-4">
+        <div className="text-right pt-8 lg:pt-12 pe-20 bigger-screens:pe-56">
           <h1 className="text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
             Services We Offer!
           </h1>
         </div>
-        <div className="mt-14 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl mx-auto w-5/6 lg:w-full">
+        <div className="mt-14 bigger-screens:mt-44 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl bigger-screens:max-w-screen-2xl mx-auto w-5/6 lg:w-full">
           <WobbleCard containerClassName="col-span-1 max-h-[100px] lg:max-h-[250px] lg:mt-20 bg-amber-600">
-            <h2 className="text-center text-xl lg:text-3xl text-zinc-950">
+            <h2 className="text-center text-xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
               We work Nationwide!
             </h2>
           </WobbleCard>
@@ -22,11 +22,11 @@ export default function Services() {
             containerClassName="col-span-1 lg:col-span-2 h-full bg-zinc-900 lg:min-h-[300px]"
             className=""
           >
-            <div className="max-w-md">
+            <div className="max-w-md bigger-screens:max-w-xl">
               <h2 className="text-left text-balance text-5xl lg:text-7xl tracking-[-0.015em] text-amber-600">
                 Residential
               </h2>
-              <p className="pt-4 text-left text-zinc-300">
+              <p className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-none tracking-tight text-zinc-300">
                 This is the majority of our business, working in family homes
                 and private residences on a daily basis. Cleanliness is a
                 priority and using the latest dustless sanding equipment for
@@ -40,18 +40,18 @@ export default function Services() {
               width={800}
               height={500}
               alt="linear demo image"
-              className="absolute -right-4 top-2 lg:-right-[38%] grayscale filter -bottom-10 object-contain hidden lg:block"
+              className="absolute -right-4 top-0.5 2xl:top-10 bigger-screens:top-10 lg:-right-[38%] bigger-screens:-right-[25%] grayscale filter -bottom-10 object-contain hidden lg:block"
             />
           </WobbleCard>
           <WobbleCard
             containerClassName="col-span-1 lg:col-span-2 h-full bg-zinc-900 lg:min-h-[300px]"
             className=""
           >
-            <div className="max-w-md">
+            <div className="max-w-md bigger-screens:max-w-xl">
               <h2 className="text-left text-balance text-5xl lg:text-7xl tracking-[-0.015em] text-amber-600">
                 Commercial
               </h2>
-              <p className="pt-4 text-left text-zinc-300">
+              <p className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-none tracking-tight text-zinc-300">
                 Commercial wallcoverings can start to push the boundaries of
                 what wallpaper is.. often 1.3 metres wide and made on a variety
                 of backings (cloth, fleece, hessian) a lot of wallpaper hangers
@@ -61,15 +61,15 @@ export default function Services() {
               </p>
             </div>
             <Image
-              src="/images/gallery-3.png"
+              src="/images/gallery-1.png"
               width={800}
               height={500}
               alt="linear demo image"
-              className="absolute -right-4 top-2 lg:-right-[38%] grayscale filter -bottom-10 object-contain hidden lg:block"
+              className="absolute -right-4 top-2 2xl:top-12  bigger-screens:top-10 lg:-right-[38%] bigger-screens:-right-[25%] grayscale filter -bottom-10 object-contain hidden lg:block"
             />
           </WobbleCard>
           <WobbleCard containerClassName="col-span-1 max-h-[250px] lg:mt-20 bg-amber-600">
-            <h2 className="text-center text-xl lg:text-3xl text-zinc-950">
+            <h2 className="text-center text-xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
               Contact us today!
             </h2>
           </WobbleCard>
