@@ -43,13 +43,15 @@ export default function Navbar() {
           ))}
         </ul>
         <ul
-          className={`absolute lg:hidden w-full flex flex-col items-right gap-4 px-4 text-right text-5xl sm:text-6xl bg-zinc-200 ${
+          className={`absolute lg:hidden w-full min-h-screen flex flex-col items-right gap-2 py-24 sm:py-8 px-4 text-right text-5xl sm:text-6xl bg-zinc-200 ${
             isOpen ? 'top-36' : 'hidden'
           }`}
         >
           {[...leftNavLinks, ...rightNavLinks].map((link, index) => (
             <li className="list-none py-2" key={index}>
-              <a href={link.href}>{link.text}</a>
+              <a href={link.href} onClick={() => setIsOpen(!isOpen)}>
+                {link.text}
+              </a>
             </li>
           ))}
         </ul>

@@ -97,6 +97,11 @@ export default function Contact() {
             <a href="#">TO TOP</a>
           </p>
         </div>
+        <div className="pt-6 ps-4 pe-4">
+          <p className="text-center text-sm text-amber-600">
+            © 2024 Strictly Paper | All rights reserved | +64 27 493 0320
+          </p>
+        </div>
       </main>
     </>
   )
