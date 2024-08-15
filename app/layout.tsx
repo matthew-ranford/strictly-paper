@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
-import { Titan_One } from 'next/font/google'
+import { inter } from '@/fonts'
 import './globals.css'
-
-const titan = Titan_One({ subsets: ['latin'], weight: ['400'] })
 
 export const metadata: Metadata = {
   title: 'Strictly Paper | Wallpapering Services',
@@ -17,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={titan.className}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
