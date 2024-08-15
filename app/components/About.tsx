@@ -2,9 +2,7 @@
 
 import Image from 'next/image'
 import aboutImage from '../../public/images/about-image.png'
-
-// Margin for the main class
-// mt-10 lg:mt-20 2xl:mt-24 bigger-screens:mt-32
+import { titan } from '@/fonts'
 
 export default function About() {
   return (
@@ -20,9 +18,11 @@ export default function About() {
           />
         </div>
         <div className="text-center pt-8 lg:pt-12 pl-24 lg:pl-64 2xl:pl-72 bigger-screens:pl-96">
-          <h1 className="text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
-            Who We Are!
-          </h1>
+          <div className={titan.className}>
+            <h1 className="text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+              Who We Are!
+            </h1>
+          </div>
         </div>
         <div className="pt-10 flex justify-end text-zinc-300 text-balance text-right lg:text-left text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight">
           <p className="max-w-3xl 2xl:max-w-5xl bigger-screens:max-w-7xl ps-4 pe-8 lg:pe-20 bigger-screens:mr-10">

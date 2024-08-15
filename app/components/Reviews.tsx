@@ -2,6 +2,7 @@
 
 import { Highlight } from '@/components/ui/hero-highlight'
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
+import { titan } from '@/fonts'
 
 export default function Reviews() {
   // InfiniteMovingCards
@@ -27,15 +28,16 @@ export default function Reviews() {
     <>
       <main id="reviews" className="mt-10 pb-10">
         <div className="text-center pt-8 pb-6 lg:pb-10 ps-2 pe-2">
-          <h1 className="text-zinc-950 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
-            What our{' '}
-            <Highlight>
-              <span className="text-amber-600">clients</span>
-            </Highlight>{' '}
-            have to say?
-          </h1>
+          <div className={titan.className}>
+            <h1 className="text-zinc-950 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+              What our{' '}
+              <Highlight>
+                <span className="text-amber-600">clients</span>
+              </Highlight>{' '}
+              have to say?
+            </h1>
+          </div>
         </div>
-
         <InfiniteMovingCards
           items={testimonials}
           direction="left"

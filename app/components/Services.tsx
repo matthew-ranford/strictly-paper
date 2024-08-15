@@ -2,30 +2,37 @@
 
 import Image from 'next/image'
 import { WobbleCard } from '@/components/ui/wobble-card'
+import { titan } from '@/fonts'
 
 export default function Services() {
   return (
     <>
       <main id="services" className="2xl:mt-14 bigger-screens:mt-32 pb-4">
         <div className="text-right pt-8 lg:pt-12 pe-20 bigger-screens:pe-56">
-          <h1 className="text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
-            Services We Offer!
-          </h1>
+          <div className={titan.className}>
+            <h1 className="text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+              Services We Offer!
+            </h1>
+          </div>
         </div>
         <div className="mt-14 bigger-screens:mt-44 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl bigger-screens:max-w-screen-2xl mx-auto w-5/6 lg:w-full">
           <WobbleCard containerClassName="col-span-1 max-h-[100px] lg:max-h-[250px] lg:mt-20 bg-amber-600">
-            <h2 className="text-center text-xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
-              We work Nationwide!
-            </h2>
+            <div className={titan.className}>
+              <h2 className="text-center text-xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
+                We work Nationwide!
+              </h2>
+            </div>
           </WobbleCard>
           <WobbleCard
             containerClassName="col-span-1 lg:col-span-2 h-full bg-zinc-900 lg:min-h-[300px]"
             className=""
           >
             <div className="max-w-md bigger-screens:max-w-xl">
-              <h2 className="text-left text-balance text-5xl lg:text-7xl tracking-[-0.015em] text-amber-600">
-                Residential
-              </h2>
+              <div className={titan.className}>
+                <h2 className="text-left text-balance text-5xl lg:text-7xl tracking-[-0.015em] text-amber-600">
+                  Residential
+                </h2>
+              </div>
               <p className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-none tracking-tight text-zinc-300">
                 This is the majority of our business, working in family homes
                 and private residences on a daily basis. Cleanliness is a
@@ -48,9 +55,11 @@ export default function Services() {
             className=""
           >
             <div className="max-w-md bigger-screens:max-w-xl">
-              <h2 className="text-left text-balance text-5xl lg:text-7xl tracking-[-0.015em] text-amber-600">
-                Commercial
-              </h2>
+              <div className={titan.className}>
+                <h2 className="text-left text-balance text-5xl lg:text-7xl tracking-[-0.015em] text-amber-600">
+                  Commercial
+                </h2>
+              </div>
               <p className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-none tracking-tight text-zinc-300">
                 Commercial wallcoverings can start to push the boundaries of
                 what wallpaper is.. often 1.3 metres wide and made on a variety
@@ -69,9 +78,11 @@ export default function Services() {
             />
           </WobbleCard>
           <WobbleCard containerClassName="col-span-1 max-h-[250px] lg:mt-20 bg-amber-600">
-            <h2 className="text-center text-xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
-              Contact us today!
-            </h2>
+            <div className={titan.className}>
+              <h2 className="text-center text-xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
+                Contact us today!
+              </h2>
+            </div>
           </WobbleCard>
         </div>
       </main>

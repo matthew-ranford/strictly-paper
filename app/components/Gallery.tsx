@@ -2,8 +2,7 @@
 
 import { ImagesSlider } from '@/components/ui/images-slider'
 import { motion } from 'framer-motion'
-
-// TODO: Look at taking out the background colour in the images-slider bg-black/60
+import { titan } from '@/fonts'
 
 export default function Gallery() {
   const images = [
@@ -21,12 +20,14 @@ export default function Gallery() {
       <main id="gallery" className="mt-10 bg-zinc-900">
         <div className="lg:flex lg:justify-end">
           <div className="pt-8 lg:pt-36 2xl:pt-52 bigger-screens:pt-96 pb-6">
-            <h1 className="text-left text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight px-6 lg:px-0 lg:pe-32 2xl:pe-52 bigger-screens:pe-10 block bigger-screens:inline-block">
-              Our{' '}
-              <span className="lg:block bigger-screens:inline-block">
-                Work!
-              </span>
-            </h1>
+            <div className={titan.className}>
+              <h1 className="text-left text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight px-6 lg:px-0 lg:pe-32 2xl:pe-52 bigger-screens:pe-10 block bigger-screens:inline-block">
+                Our{' '}
+                <span className="lg:block bigger-screens:inline-block">
+                  Work!
+                </span>
+              </h1>
+            </div>
             <p className="text-left text-zinc-300 pt-10 px-8 lg:px-0 2xl:px-6 pb-4 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight text-balance lg:max-w-sm 2xl:max-w-xl bigger-screens:max-w-2xl block">
               Whether you&apos;re looking for inspiration or seeking the perfect
               design to elevate your home!{' '}

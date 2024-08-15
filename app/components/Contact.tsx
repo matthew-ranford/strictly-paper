@@ -1,10 +1,14 @@
+import { titan } from '@/fonts'
+
 export default function Contact() {
   return (
     <>
       <main id="contact" className="bg-zinc-900 pb-10">
-        <h1 className="pt-8 lg:pt-12 text-center text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
-          Get In Touch With Us!
-        </h1>
+        <div className={titan.className}>
+          <h1 className="pt-8 lg:pt-12 text-center text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+            Get In Touch With Us!
+          </h1>
+        </div>
         <div className="flex flex-col lg:flex-row items-center place-content-evenly bigger-screens:place-content-center">
           <div className="pt-10 lg:pt-0 text-balance lg:text-pretty text-center md:text-left max-w-md lg:max-w-lg bigger-screens:max-w-xl bigger-screens:mx-20">
             <h2 className="text-zinc-300 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight mb-5">
@@ -15,12 +19,13 @@ export default function Contact() {
               below!
             </p>
             <div className="text-amber-600 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight mb-5">
-              <a href="mailto:email@gmail.com">email@gmail.com</a>
+              <a href="mailto:email@gmail.com">john.daken@gmail.com</a>
+              <span className="text-zinc-300 hidden sm:inline"> | </span>
               <a
                 href="tel:0274930320"
-                className="lg:px-3 pt-4 lg:pt-0 block lg:inline-block"
+                className="pt-4 lg:pt-0 block lg:inline-block"
               >
-                0274930320
+                +64 27 493 0320
               </a>
             </div>
             <p className="text-zinc-300 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight mb-5">

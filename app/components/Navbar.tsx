@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { titan } from '@/fonts'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -8,7 +9,6 @@ export default function Navbar() {
   const leftNavLinks = [
     { href: '#about', text: 'Who We Are' },
     { href: '#services', text: 'Our Services' },
-    // { href: '#gallery', text: 'Gallery' },
   ]
 
   const rightNavLinks = [
@@ -31,10 +31,12 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <h1 className="text-amber-600 text-center text-6xl lg:text-7xl 2xl:text-8xl">
-          <span className="block">Strictly</span>
-          <span className="block">Paper</span>
-        </h1>
+        <div className={titan.className}>
+          <h1 className="text-amber-600 text-center text-6xl lg:text-7xl 2xl:text-8xl">
+            <span className="block">Strictly</span>
+            <span className="block">Paper</span>
+          </h1>
+        </div>
         <ul className="hidden lg:flex gap-10 text-xl 2xl:text-2xl bigger-screens:text-3xl">
           {rightNavLinks.map((link, index) => (
             <li className="list-none nav-link" key={index}>
