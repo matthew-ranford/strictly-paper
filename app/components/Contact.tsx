@@ -29,6 +29,17 @@ export default function Contact() {
               </a>
             </div>
             <p className="text-zinc-300 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight mb-5">
+              For any painting related enquiries, we recommend
+              <a
+                href="https://www.atd-decorators.co.nz"
+                target="_blank"
+                className="text-amber-600"
+              >
+                {' '}
+                ATD Decorators
+              </a>{' '}
+            </p>
+            <p className="text-zinc-300 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight mb-5">
               We will get back to you as soon as possible!
             </p>
           </div>
