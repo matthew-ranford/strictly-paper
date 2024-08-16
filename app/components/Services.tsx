@@ -1,6 +1,8 @@
 'use client'
 
 import Image from 'next/image'
+import residentialImage from '../../public/images/gallery-2.png'
+import commercialImage from '../../public/images/gallery-1.png'
 import { WobbleCard } from '@/components/ui/wobble-card'
 import { titan } from '@/fonts'
 
@@ -43,7 +45,7 @@ export default function Services() {
               </p>
             </div>
             <Image
-              src="/images/gallery-2.png"
+              src={residentialImage}
               width={800}
               height={500}
               alt="linear demo image"
@@ -70,7 +72,7 @@ export default function Services() {
               </p>
             </div>
             <Image
-              src="/images/gallery-1.png"
+              src={commercialImage}
               width={800}
               height={500}
               alt="linear demo image"
