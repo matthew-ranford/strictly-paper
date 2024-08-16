@@ -21,7 +21,7 @@ export default function Services() {
           <WobbleCard containerClassName="col-span-1 max-h-[100px] lg:max-h-[250px] lg:mt-20 bg-amber-600">
             <div className={titan.className}>
               <h2 className="text-center text-xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
-                We work Nationwide!
+                Greater Wellington Region!
               </h2>
             </div>
           </WobbleCard>
@@ -79,13 +79,15 @@ export default function Services() {
               className="absolute -right-4 top-2 2xl:top-12  bigger-screens:top-10 lg:-right-[38%] bigger-screens:-right-[25%] grayscale filter -bottom-10 object-contain hidden lg:block"
             />
           </WobbleCard>
-          <WobbleCard containerClassName="col-span-1 max-h-[250px] lg:mt-20 bg-amber-600">
-            <div className={titan.className}>
-              <h2 className="text-center text-xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
-                Contact us today!
-              </h2>
-            </div>
-          </WobbleCard>
+          <a href="#contact">
+            <WobbleCard containerClassName="col-span-1 max-h-[250px] lg:mt-20 bg-amber-600">
+              <div className={titan.className}>
+                <h2 className="text-center text-xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
+                  Contact us today!
+                </h2>
+              </div>
+            </WobbleCard>
+          </a>
         </div>
       </main>
     </>
