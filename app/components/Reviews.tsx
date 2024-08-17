@@ -29,10 +29,10 @@ export default function Reviews() {
       <main id="reviews" className="mt-10 pb-10">
         <div className="text-center pt-8 pb-6 lg:pb-10 ps-2 pe-2">
           <div className={titan.className}>
-            <h1 className="text-zinc-950 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+            <h1 className="text-zinc-950 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
               What our{' '}
               <Highlight>
-                <span className="text-amber-500">clients</span>
+                <span className="text-amber-500 mx-4">clients</span>
               </Highlight>{' '}
               have to say?
             </h1>
