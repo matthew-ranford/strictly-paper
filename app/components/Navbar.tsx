@@ -32,7 +32,7 @@ export default function Navbar() {
           ))}
         </ul>
         <div className={titan.className}>
-          <h1 className="text-amber-600 text-center text-6xl lg:text-7xl 2xl:text-8xl">
+          <h1 className="text-amber-500 text-center text-6xl lg:text-7xl 2xl:text-8xl">
             <span className="block">Strictly</span>
             <span className="block">Paper</span>
           </h1>
