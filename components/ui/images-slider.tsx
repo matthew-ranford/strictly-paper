@@ -1,6 +1,7 @@
 'use client'
 import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'framer-motion'
+import { StaticImageData } from 'next/image'
 import React, { useEffect, useState } from 'react'
 
 export const ImagesSlider = ({
@@ -12,7 +13,7 @@ export const ImagesSlider = ({
   autoplay = true,
   direction = 'up',
 }: {
-  images: string[]
+  images: StaticImageData[]
   children: React.ReactNode
   overlay?: React.ReactNode
   overlayClassName?: string
