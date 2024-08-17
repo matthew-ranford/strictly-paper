@@ -6,10 +6,10 @@ import { titan } from '@/fonts'
 
 export default function Gallery() {
   const images = [
-    '../../public/images/gallery-0.png',
-    '../../public/images/gallery-1.png',
-    '../../public/images/gallery-2.png',
-    '../../public/images/gallery-3.png',
+    'images/gallery-0.png',
+    'images/gallery-1.png',
+    'images/gallery-2.png',
+    'images/gallery-3.png',
   ]
 
   return (
