@@ -1,8 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-// import residentialImage from '../../public/images/gallery-2.png'
-// import commercialImage from '../../public/images/gallery-1.png'
+import residentialImage from '../../public/images/gallery-9.png'
+import commercialImage from '../../public/images/gallery-12.png'
 import { WobbleCard } from '@/components/ui/wobble-card'
 import { titan } from '@/fonts'
 
@@ -44,13 +44,13 @@ export default function Services() {
                 come. You can rest assured, it will be expertly hung.
               </p>
             </div>
-            {/* <Image
+            <Image
               src={residentialImage}
               width={800}
               height={500}
               alt="linear demo image"
-              className="absolute -right-4 top-0.5 2xl:top-10 bigger-screens:top-10 lg:-right-[38%] bigger-screens:-right-[25%] grayscale filter -bottom-10 object-contain hidden lg:block"
-            /> */}
+              className="absolute -right-4 top-0.5 2xl:top-10 bigger-screens:top-10 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
+            />
           </WobbleCard>
           <WobbleCard
             containerClassName="col-span-1 lg:col-span-2 h-full bg-zinc-900 lg:min-h-[300px]"
@@ -71,13 +71,13 @@ export default function Services() {
                 working to tight deadlines on major building sites.
               </p>
             </div>
-            {/* <Image
+            <Image
               src={commercialImage}
               width={800}
               height={500}
               alt="linear demo image"
-              className="absolute -right-4 top-2 2xl:top-12  bigger-screens:top-10 lg:-right-[38%] bigger-screens:-right-[25%] grayscale filter -bottom-10 object-contain hidden lg:block"
-            /> */}
+              className="absolute -right-4 top-0.5 2xl:top-12  bigger-screens:top-10 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
+            />
           </WobbleCard>
           <a href="#contact">
             <WobbleCard containerClassName="col-span-1 max-h-[250px] lg:mt-20 bg-amber-600">
