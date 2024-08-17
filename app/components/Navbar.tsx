@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { titan } from '@/fonts'
+import { motion, animate, stagger } from 'framer-motion'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,6 +21,10 @@ export default function Navbar() {
   const handleMenuClick = () => {
     setIsOpen(!isOpen)
   }
+
+  const sequence = [
+    ['li', { opacity: [0, 1], x: [100, 0] }, { delay: stagger(0.15) }],
+  ]
 
   return (
     <>
@@ -48,20 +53,30 @@ export default function Navbar() {
           ))}
         </ul>
         <ul
-          className={`absolute lg:hidden w-full min-h-screen flex flex-col items-right gap-2 py-24 sm:py-8 px-4 text-right text-5xl sm:text-6xl bg-zinc-200 ${
-            isOpen ? 'top-36' : 'hidden'
+          className={`absolute lg:hidden w-full min-h-screen flex flex-col items-right gap-2 py-16 sm:py-8 px-4 text-right text-5xl sm:text-6xl bg-zinc-50 ${
+            isOpen
+              ? 'top-36 animate-slideIn border-4 border-zinc-950 rounded-2xl'
+              : 'hidden'
           }`}
         >
           {[...leftNavLinks, ...rightNavLinks].map((link, index) => (
-            <li className="list-none py-2" key={index}>
-              <a href={link.href} onClick={() => setIsOpen(!isOpen)}>
-                {link.text}
-              </a>
-            </li>
+            <div className={titan.className} key={index}>
+              <li className="list-none py-2">
+                <a href={link.href} onClick={handleMenuClick}>
+                  {link.text}
+                </a>
+              </li>
+            </div>
           ))}
         </ul>
         <div className="lg:hidden flex">
-          <button onClick={handleMenuClick}>
+          <button
+            onClick={() => setIsOpen(!isOpen, animate(sequence))}
+            aria-label="button"
+            aria-controls="navbar-dropdown-menu"
+            aria-expanded={isOpen}
+            type="button"
+          >
             <span
               className={`bg-zinc-950 block transition-all duration-700 ease-out
          h-1 rounded-2xl ${
