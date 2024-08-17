@@ -32,7 +32,7 @@ export default function Reviews() {
             <h1 className="text-zinc-950 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
               What our{' '}
               <Highlight>
-                <span className="text-amber-600">clients</span>
+                <span className="text-amber-500">clients</span>
               </Highlight>{' '}
               have to say?
             </h1>

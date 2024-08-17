@@ -33,7 +33,7 @@ export default function Gallery() {
         <div className="lg:flex lg:justify-end">
           <div className="pt-8 lg:pt-36 2xl:pt-52 bigger-screens:pt-96 pb-6">
             <div className={titan.className}>
-              <h1 className="text-left text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight px-6 lg:px-0 lg:pe-32 2xl:pe-52 bigger-screens:pe-10 block bigger-screens:inline-block">
+              <h1 className="text-left text-amber-500 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight px-6 lg:px-0 lg:pe-32 2xl:pe-52 bigger-screens:pe-10 block bigger-screens:inline-block">
                 Our{' '}
                 <span className="lg:block bigger-screens:inline-block">
                   Work!

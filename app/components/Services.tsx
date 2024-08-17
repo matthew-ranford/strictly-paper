@@ -12,13 +12,13 @@ export default function Services() {
       <main id="services" className="2xl:mt-14 bigger-screens:mt-32 pb-4">
         <div className="text-right pt-8 lg:pt-12 pe-20 bigger-screens:pe-56">
           <div className={titan.className}>
-            <h1 className="text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+            <h1 className="text-amber-500 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
               Services We Offer!
             </h1>
           </div>
         </div>
         <div className="mt-14 bigger-screens:mt-44 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl bigger-screens:max-w-screen-2xl mx-auto w-5/6 lg:w-full">
-          <WobbleCard containerClassName="col-span-1 max-h-[100px] lg:max-h-[250px] lg:mt-20 bg-amber-600">
+          <WobbleCard containerClassName="col-span-1 max-h-[100px] lg:max-h-[250px] lg:mt-20 bg-amber-500">
             <div className={titan.className}>
               <h2 className="text-center text-xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
                 Greater Wellington Region!
@@ -31,7 +31,7 @@ export default function Services() {
           >
             <div className="max-w-md bigger-screens:max-w-xl">
               <div className={titan.className}>
-                <h2 className="text-left text-balance text-5xl lg:text-7xl tracking-[-0.015em] text-amber-600">
+                <h2 className="text-left text-balance text-5xl lg:text-7xl tracking-[-0.015em] text-amber-500">
                   Residential
                 </h2>
               </div>
@@ -58,7 +58,7 @@ export default function Services() {
           >
             <div className="max-w-md bigger-screens:max-w-xl">
               <div className={titan.className}>
-                <h2 className="text-left text-balance text-5xl lg:text-7xl tracking-[-0.015em] text-amber-600">
+                <h2 className="text-left text-balance text-5xl lg:text-7xl tracking-[-0.015em] text-amber-500">
                   Commercial
                 </h2>
               </div>
@@ -80,7 +80,7 @@ export default function Services() {
             />
           </WobbleCard>
           <a href="#contact">
-            <WobbleCard containerClassName="col-span-1 max-h-[250px] lg:mt-20 bg-amber-600">
+            <WobbleCard containerClassName="col-span-1 max-h-[250px] lg:mt-20 bg-amber-500">
               <div className={titan.className}>
                 <h2 className="text-center text-xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
                   Contact us today!

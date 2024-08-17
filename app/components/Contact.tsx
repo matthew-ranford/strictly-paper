@@ -5,7 +5,7 @@ export default function Contact() {
     <>
       <main id="contact" className="bg-zinc-900 pb-10">
         <div className={titan.className}>
-          <h1 className="pt-8 lg:pt-12 text-center text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+          <h1 className="pt-8 lg:pt-12 text-center text-amber-500 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
             Get In Touch With Us!
           </h1>
         </div>
@@ -18,7 +18,7 @@ export default function Contact() {
               Alternatively, email or call John directly from one of the links
               below!
             </p>
-            <div className="text-amber-600 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight mb-5">
+            <div className="text-amber-500 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight mb-5">
               <a href="mailto:email@gmail.com">john.daken@gmail.com</a>
               <span className="text-zinc-300 hidden sm:inline"> | </span>
               <a
@@ -33,7 +33,7 @@ export default function Contact() {
               <a
                 href="https://www.atd-decorators.co.nz"
                 target="_blank"
-                className="text-amber-600"
+                className="text-amber-500"
               >
                 {' '}
                 ATD Decorators
@@ -55,7 +55,7 @@ export default function Contact() {
                 type="text"
                 id="name"
                 name="name"
-                className="w-11/12 md:w-full mx-4 bg-white rounded border border-gray-500 focus:border-amber-600 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-11/12 md:w-full mx-4 bg-white rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative mb-4">
@@ -69,7 +69,7 @@ export default function Contact() {
                 type="email"
                 id="email"
                 name="email"
-                className="w-11/12 md:w-full mx-4 bg-white rounded border border-gray-500 focus:border-amber-600 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-11/12 md:w-full mx-4 bg-white rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative mb-4">
@@ -83,7 +83,7 @@ export default function Contact() {
                 type="phone"
                 id="phone"
                 name="phone"
-                className="w-11/12 md:w-full mx-4 bg-white rounded border border-gray-500 focus:border-amber-600 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-11/12 md:w-full mx-4 bg-white rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative mb-4">
@@ -96,11 +96,11 @@ export default function Contact() {
               <textarea
                 id="message"
                 name="message"
-                className="w-11/12 md:w-full mx-4 bg-white rounded border border-gray-500 focus:border-amber-600 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-zinc-950 py-1 px-3 resize-y leading-6 transition-colors duration-200 ease-in-out"
+                className="w-11/12 md:w-full mx-4 bg-white rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-zinc-950 py-1 px-3 resize-y leading-6 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="text-center">
-              <button className="border-2 rounded-xl border-zinc-950 bg-amber-600 transition-all duration-1000 hover:bg-zinc-950 hover:text-amber-600 px-3 py-3 mx-3 lg:mx-4">
+              <button className="border-2 rounded-xl border-zinc-950 bg-amber-500 transition-all duration-1000 hover:bg-zinc-950 hover:text-amber-500 px-3 py-3 mx-3 lg:mx-4">
                 <span>
                   <a href="">Submit</a>
                 </span>
@@ -108,13 +108,13 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="mt-20 w-20 h-20 bg-amber-600 rounded-full flex items-center justify-center mx-auto">
+        <div className="mt-20 w-20 h-20 bg-amber-500 rounded-full flex items-center justify-center mx-auto">
           <p className="text-zinc-950">
             <a href="#">TO TOP</a>
           </p>
         </div>
         <div className="pt-6 ps-4 pe-4">
-          <p className="text-center text-sm text-amber-600">
+          <p className="text-center text-sm text-amber-500">
             © 2024 Strictly Paper | All rights reserved | +64 27 493 0320
           </p>
         </div>

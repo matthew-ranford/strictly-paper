@@ -19,7 +19,7 @@ export default function About() {
         </div>
         <div className="text-center pt-8 lg:pt-12 pl-24 lg:pl-64 2xl:pl-72 bigger-screens:pl-96">
           <div className={titan.className}>
-            <h1 className="text-amber-600 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+            <h1 className="text-amber-500 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
               Who We Are!
             </h1>
           </div>
