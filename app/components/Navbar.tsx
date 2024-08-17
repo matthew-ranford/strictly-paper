@@ -28,9 +28,12 @@ export default function Navbar() {
 
   return (
     <>
-      <nav
+      <motion.nav
         className="flex justify-around items-center pt-2 pb-6 px-0 lg:px-20 2xl:px-10 bigger-screens:px-14 navbar-container"
         id="home"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: 'linear', duration: 1.5 }}
       >
         <ul className="hidden lg:flex gap-16 2xl:gap-20 bigger-screens:gap-10 text-xl 2xl:text-2xl bigger-screens:text-3xl">
           {leftNavLinks.map((link, index) => (
@@ -92,7 +95,7 @@ export default function Navbar() {
             ></span>
           </button>
         </div>
-      </nav>
+      </motion.nav>
     </>
   )
 }
