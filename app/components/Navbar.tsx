@@ -23,7 +23,10 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex justify-around items-center pt-2 pb-6 px-0 lg:px-20 2xl:px-10 bigger-screens:px-14 navbar-container">
+      <nav
+        className="flex justify-around items-center pt-2 pb-6 px-0 lg:px-20 2xl:px-10 bigger-screens:px-14 navbar-container"
+        id="home"
+      >
         <ul className="hidden lg:flex gap-16 2xl:gap-20 bigger-screens:gap-10 text-xl 2xl:text-2xl bigger-screens:text-3xl">
           {leftNavLinks.map((link, index) => (
             <li className="list-none nav-link" key={index}>

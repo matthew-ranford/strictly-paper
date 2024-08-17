@@ -33,7 +33,7 @@ export default function About() {
               commercial wide vinyls and luxury materials such as grasscloth,
               textiles, fabrics, flock, silk and metallics.
             </span>
-            <span className="block pt-6">
+            <span className="block pt-6 bigger-screens:pb-10">
               Whether one wall or several rooms, the finesse and same level of
               detail are put into every project and because of this, John has
               quickly become the installer of choice for many of Wellingtons top

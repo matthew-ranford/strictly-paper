@@ -110,7 +110,7 @@ export default function Contact() {
         </div>
         <div className="mt-20 w-20 h-20 bg-amber-500 rounded-full flex items-center justify-center mx-auto">
           <p className="text-zinc-950">
-            <a href="#">TO TOP</a>
+            <a href="#home">TO TOP</a>
           </p>
         </div>
         <div className="pt-6 ps-4 pe-4">
