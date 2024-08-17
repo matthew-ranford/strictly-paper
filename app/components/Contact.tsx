@@ -1,6 +1,63 @@
+'use client'
+
 import { titan } from '@/fonts'
+import { ChangeEvent, FormEvent, useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  })
+
+  const handleFormInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })
+  }
+
+  const handleFormMessageChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })
+  }
+
+  const handleEmailSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    const { name, email, phone, message } = formData
+
+    if (!name || !email || !phone || !message) {
+      console.log('Please fill in all fields')
+      return
+    }
+
+    const templateParams = {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    }
+
+    emailjs.init('3F64Uwf82y_srndD5')
+    emailjs
+      .send('service_strictly-paper', 'template_strictly-paper', templateParams)
+      .then((response) => {
+        console.log('Form submitted successfully:', response)
+        alert('Form submitted successfully')
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+        })
+      })
+      .catch((error) => {
+        console.error('Error submitting form:', error)
+        alert('Failed to submit form, please try again later')
+      })
+  }
+
   return (
     <>
       <main id="contact" className="bg-zinc-900 pb-10">
@@ -44,68 +101,82 @@ export default function Contact() {
             </p>
           </div>
           <div className="pt-10 lg:pt-20 md:pe-6 lg:pe-0">
-            <div className="relative mb-4">
-              <label
-                htmlFor="name"
-                className="leading-7 text-sm text-zinc-300 ps-4"
-              >
-                Name<span className="text-amber-500">*</span>
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div className="relative mb-4">
-              <label
-                htmlFor="email"
-                className="leading-7 text-sm text-zinc-300 ps-4"
-              >
-                Email Address<span className="text-amber-500">*</span>
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div className="relative mb-4">
-              <label
-                htmlFor="phone"
-                className="leading-7 text-sm text-zinc-300 ps-4"
-              >
-                Phone
-              </label>
-              <input
-                type="phone"
-                id="phone"
-                name="phone"
-                className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div className="relative mb-4">
-              <label
-                htmlFor="message"
-                className="leading-7 text-sm text-zinc-300 ps-4"
-              >
-                Message<span className="text-amber-500">*</span>
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                className="w-11/12 md:w-full mx-4 bg-zinc-200  rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-zinc-950 py-1 px-3 resize-y leading-6 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div className="text-center">
-              <button className="border-2 rounded-xl border-zinc-950 bg-amber-500 transition-all duration-1000 hover:bg-zinc-950 hover:text-amber-500 px-3 py-3 mx-3 lg:mx-4">
-                <span>
-                  <a href="">Submit</a>
-                </span>
-              </button>
-            </div>
+            <form onSubmit={handleEmailSubmit}>
+              <div className="relative mb-4">
+                <label
+                  htmlFor="name"
+                  className="leading-7 text-sm text-zinc-300 ps-4"
+                >
+                  Name<span className="text-amber-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  value={formData.name}
+                  onChange={handleFormInputChange}
+                  className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+              <div className="relative mb-4">
+                <label
+                  htmlFor="email"
+                  className="leading-7 text-sm text-zinc-300 ps-4"
+                >
+                  Email Address<span className="text-amber-500">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  value={formData.email}
+                  onChange={handleFormInputChange}
+                  className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+              <div className="relative mb-4">
+                <label
+                  htmlFor="phone"
+                  className="leading-7 text-sm text-zinc-300 ps-4"
+                >
+                  Phone
+                </label>
+                <input
+                  type="phone"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleFormInputChange}
+                  className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+              <div className="relative mb-4">
+                <label
+                  htmlFor="message"
+                  className="leading-7 text-sm text-zinc-300 ps-4"
+                >
+                  Message<span className="text-amber-500">*</span>
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  value={formData.message}
+                  onChange={handleFormMessageChange}
+                  className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-zinc-950 py-1 px-3 resize-y leading-6 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+              <div className="text-center">
+                <button
+                  className="border-2 rounded-xl border-zinc-950 bg-amber-500 transition-all duration-1000 hover:bg-zinc-950 hover:text-amber-500 px-3 py-3 mx-3 lg:mx-4"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
         </div>
         <div className="mt-20 w-20 h-20 bg-amber-500 rounded-full flex items-center justify-center mx-auto">
