@@ -10,7 +10,7 @@ export default function Services() {
   return (
     <>
       <main id="services" className="2xl:mt-14 bigger-screens:mt-32 pb-4">
-        <div className="text-right pt-8 lg:pt-12 pe-20 bigger-screens:pe-56">
+        <div className="text-right pt-8 lg:pt-12 pe-20 md:pe-32 lg:pe-20 bigger-screens:pe-56">
           <div className={titan.className}>
             <h1 className="text-amber-500 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
               Services We Offer!
