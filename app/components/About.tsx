@@ -17,14 +17,14 @@ export default function About() {
             className="about-image"
           />
         </div>
-        <div className="text-center pt-8 lg:pt-12 pl-24 lg:pl-64 2xl:pl-72 bigger-screens:pl-96">
+        <div className="text-center pt-8 lg:pt-12 pl-24 md:pl-44 lg:pl-64 2xl:pl-72 bigger-screens:pl-96">
           <div className={titan.className}>
-            <h1 className="text-amber-500 text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+            <h1 className="text-amber-500 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
               Who We Are!
             </h1>
           </div>
         </div>
-        <div className="pt-10 flex justify-end text-zinc-300 text-balance text-right lg:text-left text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight">
+        <div className="pt-10 flex justify-end text-zinc-200 text-balance text-right lg:text-left text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight">
           <p className="max-w-3xl 2xl:max-w-5xl bigger-screens:max-w-7xl ps-4 pe-8 lg:pe-20 bigger-screens:mr-10">
             John provides award winning wallpaper hanging to both residential
             and commercial customers, in Wellington and the surrounding region.
