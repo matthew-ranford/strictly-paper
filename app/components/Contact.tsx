@@ -3,8 +3,11 @@
 import { titan } from '@/fonts'
 import { ChangeEvent, FormEvent, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { motion } from 'framer-motion'
 
 export default function Contact() {
+  const [hasAnimated, setHasAnimated] = useState(false)
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -61,13 +64,33 @@ export default function Contact() {
   return (
     <>
       <main id="contact" className="bg-zinc-900 pb-10">
-        <div className={titan.className}>
-          <h1 className="pt-8 lg:pt-12 text-center text-amber-500 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+        <motion.div
+          className={titan.className}
+          initial={{ opacity: 0, y: -5 }}
+          transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.25 }}
+          animate={hasAnimated ? { y: 0, opacity: 1 } : {}}
+          onViewportEnter={() => {
+            if (!hasAnimated) {
+              setHasAnimated(true)
+            }
+          }}
+        >
+          <h1 className="pt-8 lg:pt-12 text-center text-amber-500 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl bigger-screens:ps-16 leading-none tracking-tight">
             Get In Touch With Us!
           </h1>
-        </div>
+        </motion.div>
         <div className="flex flex-col lg:flex-row items-center place-content-evenly bigger-screens:place-content-center">
-          <div className="pt-10 lg:pt-0 text-balance lg:text-pretty text-center md:text-center lg:text-left max-w-md lg:max-w-lg bigger-screens:max-w-xl bigger-screens:mx-20">
+          <motion.div
+            className="pt-10 lg:pt-0 text-balance lg:text-pretty text-center md:text-center lg:text-left max-w-md lg:max-w-lg bigger-screens:max-w-2xl bigger-screens:mx-20"
+            initial={{ opacity: 0, y: -2 }}
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.5 }}
+            animate={hasAnimated ? { y: 0, opacity: 1 } : {}}
+            onViewportEnter={() => {
+              if (!hasAnimated) {
+                setHasAnimated(true)
+              }
+            }}
+          >
             <h2 className="text-zinc-200 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight mb-5">
               Questions? Fill out the form to contact John!
             </h2>
@@ -99,8 +122,18 @@ export default function Contact() {
             <p className="text-zinc-200 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight mb-5">
               We will get back to you as soon as possible!
             </p>
-          </div>
-          <div className="pt-10 lg:pt-20 md:pe-6 lg:pe-0">
+          </motion.div>
+          <motion.div
+            className="pt-10 lg:pt-20 md:pe-6 lg:pe-0"
+            initial={{ opacity: 0, y: -5 }}
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.25 }}
+            animate={hasAnimated ? { y: 0, opacity: 1 } : {}}
+            onViewportEnter={() => {
+              if (!hasAnimated) {
+                setHasAnimated(true)
+              }
+            }}
+          >
             <form onSubmit={handleEmailSubmit}>
               <div className="relative mb-4">
                 <label
@@ -177,7 +210,7 @@ export default function Contact() {
                 </button>
               </div>
             </form>
-          </div>
+          </motion.div>
         </div>
         <div className="mt-20 w-20 h-20 bg-amber-500 rounded-full flex items-center justify-center mx-auto">
           <p className="text-zinc-950">
