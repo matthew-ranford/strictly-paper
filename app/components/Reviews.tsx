@@ -3,8 +3,12 @@
 import { Highlight } from '@/components/ui/hero-highlight'
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
 import { titan } from '@/fonts'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 
 export default function Reviews() {
+  const [hasAnimated, setHasAnimated] = useState(false)
+
   // InfiniteMovingCards
   const testimonials = [
     {
@@ -28,7 +32,17 @@ export default function Reviews() {
     <>
       <main id="reviews" className="mt-10 pb-10">
         <div className="text-center pt-8 pb-6 lg:pb-10 ps-2 pe-2">
-          <div className={titan.className}>
+          <motion.div
+            className={titan.className}
+            initial={{ opacity: 0, y: -5 }}
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.25 }}
+            animate={hasAnimated ? { y: 0, opacity: 1 } : {}}
+            onViewportEnter={() => {
+              if (!hasAnimated) {
+                setHasAnimated(true)
+              }
+            }}
+          >
             <h1 className="text-zinc-950 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
               What our{' '}
               <Highlight>
@@ -36,7 +50,7 @@ export default function Reviews() {
               </Highlight>{' '}
               have to say?
             </h1>
-          </div>
+          </motion.div>
         </div>
         <InfiniteMovingCards
           items={testimonials}
