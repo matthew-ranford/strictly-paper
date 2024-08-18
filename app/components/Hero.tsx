@@ -38,7 +38,7 @@ export default function Hero() {
               </h1>
             </div>
           </div>
-          <div className="text-xl 2xl:text-2xl bigger-screens:text-3xl leading-none tracking-tight pt-8 bigger-screens:pt-16 px-6 lg:px-[7.5rem] 2xl:px-20 bigger-screens:px-64 max-w-3xl md:max-w-lg lg:max-w-3xl bigger-screens:max-w-7xl">
+          <div className="text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight pt-4 bigger-screens:pt-16 px-6 lg:px-[7.5rem] 2xl:px-20 bigger-screens:px-64 max-w-3xl md:max-w-lg lg:max-w-3xl bigger-screens:max-w-7xl">
             <div className={interHeroText.className}>
               <p className="pe-4">
                 At <span className="text-amber-500">Strictly Paper</span>, we

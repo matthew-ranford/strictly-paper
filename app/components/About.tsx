@@ -3,8 +3,12 @@
 import Image from 'next/image'
 import aboutImage from '../../public/images/about-image.png'
 import { titan } from '@/fonts'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 
 export default function About() {
+  const [hasAnimated, setHasAnimated] = useState(false)
+
   return (
     <>
       <main id="about" className="bg-zinc-900 pb-10 relative">
@@ -18,13 +22,37 @@ export default function About() {
           />
         </div>
         <div className="text-center pt-8 lg:pt-12 pl-24 md:pl-44 lg:pl-64 2xl:pl-72 bigger-screens:pl-96">
-          <div className={titan.className}>
+          <motion.div
+            className={titan.className}
+            initial={{ opacity: 0, y: -5 }}
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.25 }}
+            animate={hasAnimated ? { y: 0, opacity: 1 } : {}}
+            onViewportEnter={() => {
+              if (!hasAnimated) {
+                setHasAnimated(true)
+              }
+            }}
+          >
             <h1 className="text-amber-500 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
               Who We Are!
             </h1>
-          </div>
+          </motion.div>
         </div>
-        <div className="pt-10 flex justify-end text-zinc-200 text-balance text-right lg:text-left text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight">
+        <motion.div
+          className="pt-10 flex justify-end text-zinc-200 text-balance text-right lg:text-left text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight"
+          initial={{ opacity: 0, y: -2 }}
+          transition={{
+            ease: 'easeInOut',
+            duration: 0.5,
+            delay: 0.5,
+          }}
+          animate={hasAnimated ? { y: 0, opacity: 1 } : {}}
+          onViewportEnter={() => {
+            if (!hasAnimated) {
+              setHasAnimated(true)
+            }
+          }}
+        >
           <p className="max-w-3xl 2xl:max-w-5xl bigger-screens:max-w-7xl ps-4 pe-8 lg:pe-20 bigger-screens:mr-10">
             John provides award winning wallpaper hanging to both residential
             and commercial customers, in Wellington and the surrounding region.
@@ -41,7 +69,7 @@ export default function About() {
               owners.
             </span>
           </p>
-        </div>
+        </motion.div>
       </main>
     </>
   )
