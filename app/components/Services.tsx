@@ -5,19 +5,43 @@ import residentialImage from '../../public/images/gallery-9.png'
 import commercialImage from '../../public/images/gallery-12.png'
 import { WobbleCard } from '@/components/ui/wobble-card'
 import { titan } from '@/fonts'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 
 export default function Services() {
+  const [hasAnimated, setHasAnimated] = useState(false)
+
   return (
     <>
       <main id="services" className="2xl:mt-14 bigger-screens:mt-32 pb-4">
         <div className="text-right pt-8 lg:pt-12 pe-20 md:pe-32 lg:pe-20 bigger-screens:pe-56">
-          <div className={titan.className}>
+          <motion.div
+            className={titan.className}
+            initial={{ opacity: 0, y: -5 }}
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.25 }}
+            animate={hasAnimated ? { y: 0, opacity: 1 } : {}}
+            onViewportEnter={() => {
+              if (!hasAnimated) {
+                setHasAnimated(true)
+              }
+            }}
+          >
             <h1 className="text-amber-500 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
               Services We Offer!
             </h1>
-          </div>
+          </motion.div>
         </div>
-        <div className="mt-14 bigger-screens:mt-44 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl bigger-screens:max-w-screen-2xl mx-auto w-5/6 md:w-7/12 lg:w-full">
+        <motion.div
+          className="mt-14 bigger-screens:mt-44 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl bigger-screens:max-w-screen-2xl mx-auto w-5/6 md:w-7/12 lg:w-full"
+          initial={{ opacity: 0, y: -5 }}
+          transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.25 }}
+          animate={hasAnimated ? { y: 0, opacity: 1 } : {}}
+          onViewportEnter={() => {
+            if (!hasAnimated) {
+              setHasAnimated(true)
+            }
+          }}
+        >
           <WobbleCard containerClassName="col-span-1 max-h-[100px] lg:max-h-[250px] lg:mt-20 bg-amber-500">
             <div className={titan.className}>
               <h2 className="text-center text-xl md:text-2xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
@@ -88,7 +112,7 @@ export default function Services() {
               </div>
             </WobbleCard>
           </a>
-        </div>
+        </motion.div>
       </main>
     </>
   )
