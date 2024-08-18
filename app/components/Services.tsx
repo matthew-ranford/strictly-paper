@@ -63,9 +63,7 @@ export default function Services() {
                 This is the majority of our business, working in family homes
                 and private residences on a daily basis. Cleanliness is a
                 priority and using the latest dustless sanding equipment for
-                wall preparation, dust is virtually non existent. Wallpapers are
-                often a big investment and set the scene in a home for years to
-                come. You can rest assured, it will be expertly hung.
+                wall preparation, dust is virtually non existent.
               </p>
             </div>
             <Image
@@ -73,7 +71,7 @@ export default function Services() {
               width={800}
               height={500}
               alt="linear demo image"
-              className="absolute -right-4 top-0.5 2xl:top-10 bigger-screens:top-10 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
+              className="absolute -right-4 top-0 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
             />
           </WobbleCard>
           <WobbleCard
@@ -90,9 +88,7 @@ export default function Services() {
                 Commercial wallcoverings can start to push the boundaries of
                 what wallpaper is.. often 1.3 metres wide and made on a variety
                 of backings (cloth, fleece, hessian) a lot of wallpaper hangers
-                are just not up to the different challenges presented. Stefan
-                has nearly 20 years of hanging experience with these materials,
-                working to tight deadlines on major building sites.
+                are just not up to the different challenges presented.
               </p>
             </div>
             <Image
@@ -100,7 +96,7 @@ export default function Services() {
               width={800}
               height={500}
               alt="linear demo image"
-              className="absolute -right-4 top-0.5 2xl:top-12  bigger-screens:top-10 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
+              className="absolute -right-4 top-0 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
             />
           </WobbleCard>
           <a href="#contact">
