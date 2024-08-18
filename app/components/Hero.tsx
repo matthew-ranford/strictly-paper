@@ -2,13 +2,19 @@
 
 import { titan, interHeroText } from '@/fonts'
 import { FlipWords } from '@/components/ui/flip-words'
+import { motion } from 'framer-motion'
 
 export default function Hero() {
   const words = ['Space', 'Home', 'Area', 'Walls']
 
   return (
     <>
-      <main className="hero-wrapper">
+      <motion.main
+        className="hero-wrapper"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: 'linear', duration: 2.5 }}
+      >
         <video
           autoPlay={true}
           loop={true}
@@ -56,7 +62,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </main>
+      </motion.main>
     </>
   )
 }
