@@ -9,23 +9,23 @@ export default function Gallery() {
   const [hasAnimated, setHasAnimated] = useState(false)
 
   const images = [
-    { src: '/images/gallery-0.jpg', alt: 'Wallpaper | Wallpapering image one' },
-    { src: '/images/gallery-1.jpg', alt: 'Wallpaper | Wallpapering image two' },
+    { src: 'images/gallery-0.jpg', alt: 'Wallpaper | Wallpapering image one' },
+    { src: 'images/gallery-1.jpg', alt: 'Wallpaper | Wallpapering image two' },
     {
-      src: '/images/gallery-2.jpg',
+      src: 'images/gallery-2.jpg',
       alt: 'Wallpaper | Wallpapering image three',
     },
     {
-      src: '/images/gallery-3.jpg',
+      src: 'images/gallery-3.jpg',
       alt: 'Wallpaper | Wallpapering image four',
     },
     {
-      src: '/images/gallery-4.jpg',
+      src: 'images/gallery-4.jpg',
       alt: 'Wallpaper | Wallpapering image five',
     },
-    { src: '/images/gallery-5.jpg', alt: 'Wallpaper | Wallpapering image six' },
+    { src: 'images/gallery-5.jpg', alt: 'Wallpaper | Wallpapering image six' },
     {
-      src: '/images/gallery-6.png',
+      src: 'images/gallery-6.png',
       alt: 'Wallpaper | Wallpapering image seven',
     },
     {
@@ -33,28 +33,28 @@ export default function Gallery() {
       alt: 'Wallpaper | Wallpapering image eight',
     },
     {
-      src: '/images/gallery-8.png',
+      src: 'images/gallery-8.png',
       alt: 'Wallpaper | Wallpapering image nine',
     },
-    { src: '/images/gallery-9.png', alt: 'Wallpaper | Wallpapering image ten' },
+    { src: 'images/gallery-9.png', alt: 'Wallpaper | Wallpapering image ten' },
     {
       src: 'images/gallery-10.jpg',
       alt: 'Wallpaper | Wallpapering image eleven',
     },
     {
-      src: '/images/gallery-11.png',
+      src: 'images/gallery-11.png',
       alt: 'Wallpaper | Wallpapering image twelve',
     },
     {
-      src: '/images/gallery-12.png',
+      src: 'images/gallery-12.png',
       alt: 'Wallpaper | Wallpapering image thirteen',
     },
     {
-      src: '/images/gallery-13.png',
+      src: 'images/gallery-13.png',
       alt: 'Wallpaper | Wallpapering image fourteen',
     },
     {
-      src: '/images/gallery-14.png',
+      src: 'images/gallery-14.png',
       alt: 'Wallpaper | Wallpapering image fifteen',
     },
     {
