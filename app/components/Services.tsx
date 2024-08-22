@@ -70,7 +70,7 @@ export default function Services() {
               src={residentialImage}
               width={800}
               height={500}
-              alt="linear demo image"
+              alt="Wallpaper | Wallpapering in a residential home"
               className="absolute -right-4 top-0 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
             />
           </WobbleCard>
@@ -95,8 +95,8 @@ export default function Services() {
               src={commercialImage}
               width={800}
               height={500}
-              alt="linear demo image"
-              className="absolute -right-4 top-0 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
+              alt="Wallpaper | Wallpapering for a commercial business"
+              className="absolute -right-4 top-0 lg:-right-[40%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
             />
           </WobbleCard>
           <a href="#contact">
