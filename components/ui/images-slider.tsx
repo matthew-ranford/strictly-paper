@@ -139,6 +139,7 @@ export const ImagesSlider = ({
             key={currentIndex}
             src={loadedImages[currentIndex].src}
             alt={loadedImages[currentIndex].alt}
+            loading="lazy"
             initial="initial"
             animate="visible"
             exit={direction === 'up' ? 'upExit' : 'downExit'}
