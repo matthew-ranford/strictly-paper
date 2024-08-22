@@ -79,7 +79,7 @@ export default function Gallery() {
     <>
       <main id="gallery" className="mt-10 bg-zinc-900">
         <div className="lg:flex lg:justify-end">
-          <div className="pt-8 lg:pt-36 2xl:pt-52 bigger-screens:pt-96 pb-6">
+          <div className="pt-8 lg:pt-24 2xl:pt-52 bigger-screens:pt-96 pb-6">
             <motion.div
               className={titan.className}
               initial={{ opacity: 0, y: -5 }}
@@ -118,6 +118,9 @@ export default function Gallery() {
                 <span className="block pt-4">
                   A wallpapering gallery highlights the endless possibilities of
                   turning walls into works of art.
+                </span>
+                <span className="sm:block pt-4 hidden">
+                  Use the left and right arrow keys to scan through our gallery.
                 </span>
               </p>
             </motion.div>
