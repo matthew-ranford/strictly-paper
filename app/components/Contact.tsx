@@ -30,7 +30,7 @@ export default function Contact() {
 
     const { name, email, phone, message } = formData
 
-    if (!name || !email || !phone || !message) {
+    if (!name || !email || !message) {
       console.log('Please fill in all fields')
       return
     }
@@ -92,20 +92,22 @@ export default function Contact() {
             }}
           >
             <h2 className="text-zinc-200 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight mb-5">
-              Questions? Fill out the form to contact John!
+              Questions? Fill out the form to contact Strictly Paper!
             </h2>
             <p className="text-zinc-200 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight mb-5">
-              Alternatively, email or call John directly from one of the links
-              below!
+              Alternatively, email or call Strictly Paper directly from one of
+              the links below!
             </p>
             <div className="text-amber-500 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight mb-5">
-              <a href="mailto:email@gmail.com">john.daken@gmail.com</a>
+              <a href="mailto:cherie@strictly-paper.nz">
+                cherie@strictly-paper.nz
+              </a>
               <span className="text-zinc-200 hidden sm:inline"> | </span>
               <a
-                href="tel:0274930320"
+                href="tel:0273835700"
                 className="pt-4 lg:pt-0 block lg:inline-block"
               >
-                +64 27 493 0320
+                +64 27 383 5700
               </a>
             </div>
             <p className="text-zinc-200 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight mb-5">
@@ -219,7 +221,7 @@ export default function Contact() {
         </div>
         <div className="pt-6 ps-4 pe-4">
           <p className="text-center text-sm text-amber-500">
-            © 2024 Strictly Paper | All rights reserved | +64 27 493 0320
+            © 2024 Strictly Paper | All rights reserved | +64 27 383 5700
           </p>
         </div>
       </main>
