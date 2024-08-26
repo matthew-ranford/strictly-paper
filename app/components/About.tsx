@@ -54,19 +54,16 @@ export default function About() {
           }}
         >
           <p className="max-w-3xl 2xl:max-w-5xl bigger-screens:max-w-7xl ps-4 pe-8 lg:pe-20 bigger-screens:mr-10">
-            John provides award winning wallpaper hanging to both residential
-            and commercial customers, in Wellington and the surrounding region.
+            With 40 year’s experience creating beautiful spaces with all types
+            of wall coverings you can rest assured you are getting the best.
             <span className="block pt-6">
-              An expert installer of all wallcoverings - wallpaper, murals,
-              commercial wide vinyls and luxury materials such as grasscloth,
-              textiles, fabrics, flock, silk and metallics.
+              John prides himself on a quality finish, and customer satisfaction
+              whether the job is big or small.
             </span>
             <span className="block pt-6 bigger-screens:pb-10">
-              Whether one wall or several rooms, the finesse and same level of
-              detail are put into every project and because of this, John has
-              quickly become the installer of choice for many of Wellingtons top
-              interior designers, builders, architects and painting company
-              owners.
+              John does both residential and commercial work around greater
+              Wellington and has over the years hung a variety of different
+              types of wall coverings and murals.
             </span>
           </p>
         </motion.div>
