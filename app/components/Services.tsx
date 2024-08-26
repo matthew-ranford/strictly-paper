@@ -60,10 +60,13 @@ export default function Services() {
                 </h2>
               </div>
               <p className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
-                This is the majority of our business, working in family homes
-                and private residences on a daily basis. Cleanliness is a
-                priority and using the latest dustless sanding equipment for
-                wall preparation, dust is virtually non existent.
+                John does a lot of his work in the residential market, working
+                in client’s homes or investment properties.
+              </p>
+              <p className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
+                This could be an established home looking to refresh their
+                space, or new builds and alterations. Anything from Whole house,
+                Murals, Feature Walls and Ceilings.
               </p>
             </div>
             <Image
@@ -71,7 +74,7 @@ export default function Services() {
               width={800}
               height={500}
               alt="Wallpaper | Wallpapering in a residential home"
-              className="absolute -right-4 top-0 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
+              className="absolute -right-4 top-1 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
             />
           </WobbleCard>
           <WobbleCard
@@ -85,10 +88,13 @@ export default function Services() {
                 </h2>
               </div>
               <p className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
-                Commercial wallcoverings can start to push the boundaries of
-                what wallpaper is.. often 1.3 metres wide and made on a variety
-                of backings (cloth, fleece, hessian) a lot of wallpaper hangers
-                are just not up to the different challenges presented.
+                Commercial work can be tricky as often you are working around
+                staff and office spaces or afterhours.
+              </p>
+              <p className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
+                John will work with each client to ensure as little disruption
+                as possible, he has excellent communication and organisation
+                skills so works perfectly in busy environments.
               </p>
             </div>
             <Image
@@ -96,7 +102,7 @@ export default function Services() {
               width={800}
               height={500}
               alt="Wallpaper | Wallpapering for a commercial business"
-              className="absolute -right-4 top-0 lg:-right-[40%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
+              className="absolute -right-4 top-1 lg:-right-[40%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
             />
           </WobbleCard>
           <a href="#contact">
