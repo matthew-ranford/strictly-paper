@@ -42,7 +42,7 @@ export default function Services() {
             }
           }}
         >
-          <WobbleCard containerClassName="col-span-1 max-h-[100px] lg:max-h-[250px] lg:mt-20 bg-amber-500">
+          <WobbleCard containerClassName="col-span-1 max-h-[100px] lg:max-h-[250px] lg:my-auto bg-amber-500">
             <div className={titan.className}>
               <h2 className="text-center text-xl md:text-2xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
                 Greater Wellington Region!
@@ -59,22 +59,32 @@ export default function Services() {
                   Residential
                 </h2>
               </div>
-              <p className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
-                John does a lot of his work in the residential market, working
-                in client’s homes or investment properties.
-              </p>
-              <p className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
-                This could be an established home looking to refresh their
-                space, or new builds and alterations. Anything from Whole house,
-                Murals, Feature Walls and Ceilings.
-              </p>
+              <div className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
+                <p className="pt-4">
+                  John specializes in bringing life to residential spaces,
+                  whether it&apos;s a cherished family home or a freshly built
+                  property.
+                </p>
+                <p className="pt-4">
+                  {' '}
+                  John works closely with homeowners and investors alike,
+                  delivering stunning transformations that range from entire
+                  home makeovers to striking murals, feature walls, and even
+                  ceilings.
+                </p>
+                <p className="pt-4">
+                  Whether you&apos;re refreshing a beloved space or adding the
+                  finishing touches to a new build, John&apos;s expertise
+                  ensures every detail is crafted with care and precision.
+                </p>
+              </div>
             </div>
             <Image
               src={residentialImage}
               width={800}
               height={500}
               alt="Wallpaper | Wallpapering in a residential home"
-              className="absolute -right-4 top-1 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
+              className="absolute -right-4 inset-y-24 bigger-screens:inset-y-26 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
             />
           </WobbleCard>
           <WobbleCard
@@ -87,26 +97,35 @@ export default function Services() {
                   Commercial
                 </h2>
               </div>
-              <p className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
-                Commercial work can be tricky as often you are working around
-                staff and office spaces or afterhours.
-              </p>
-              <p className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
-                John will work with each client to ensure as little disruption
-                as possible, he has excellent communication and organisation
-                skills so works perfectly in busy environments.
-              </p>
+              <div className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
+                <p>
+                  Navigating the complexities of commercial projects requires a
+                  skilled touch, and John excels in working around bustling
+                  office spaces and staff with minimal disruption.
+                </p>
+                <p className="pt-4">
+                  Whether it&apos;s coordinating after-hours work or seamlessly
+                  integrating into the daily flow, John&apos;s exceptional
+                  communication and organizational skills ensure that your
+                  business continues running smoothly.
+                </p>
+                <p className="pt-4">
+                  John collaborates closely with each client, delivering
+                  top-notch results while maintaining the efficiency and
+                  professionalism your busy environment demands.
+                </p>
+              </div>
             </div>
             <Image
               src={commercialImage}
               width={800}
               height={500}
               alt="Wallpaper | Wallpapering for a commercial business"
-              className="absolute -right-4 top-1 lg:-right-[40%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
+              className="absolute -right-4 inset-y-24 bigger-screens:inset-y-32 lg:-right-[39%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
             />
           </WobbleCard>
           <a href="#contact">
-            <WobbleCard containerClassName="col-span-1 max-h-[250px] lg:mt-20 bg-amber-500">
+            <WobbleCard containerClassName="col-span-1 max-h-[250px] lg:my-44 bigger-screens:my-64 bg-amber-500">
               <div className={titan.className}>
                 <h2 className="text-center text-xl md:text-2xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
                   Contact us today!
