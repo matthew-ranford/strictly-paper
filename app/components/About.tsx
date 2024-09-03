@@ -54,16 +54,19 @@ export default function About() {
           }}
         >
           <p className="max-w-3xl 2xl:max-w-5xl bigger-screens:max-w-7xl ps-4 pe-8 lg:pe-20 bigger-screens:mr-10">
-            With 40 year’s experience creating beautiful spaces with all types
-            of wall coverings you can rest assured you are getting the best.
+            With over four decades of expertise, John has mastered the art of
+            turning walls into stunning canvases. From elegant residential
+            spaces to vibrant commercial environments, he brings a meticulous
+            eye for detail and a passion for perfection to every project. 
             <span className="block pt-6">
-              John prides himself on a quality finish, and customer satisfaction
-              whether the job is big or small.
+              Whether you&apos;re dreaming of a cozy living room makeover or a
+              bold mural for your office, John ensures a flawless finish and
+              your utmost satisfaction.
             </span>
             <span className="block pt-6 bigger-screens:pb-10">
-              John does both residential and commercial work around greater
-              Wellington and has over the years hung a variety of different
-              types of wall coverings and murals.
+              Serving the greater Wellington area, John has experience with an
+              array of wall coverings and murals, making him your go-to for all
+              your wall transformation needs.
             </span>
           </p>
         </motion.div>
