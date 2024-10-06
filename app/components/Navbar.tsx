@@ -3,16 +3,15 @@
 import { useState } from 'react'
 import { titan } from '@/fonts'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
+import logoImage from '../../public/images/logo.png'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const leftNavLinks = [
+  const navLinks = [
     { href: '#about', text: 'Who We Are' },
     { href: '#services', text: 'Our Services' },
-  ]
-
-  const rightNavLinks = [
     { href: '#gallery', text: 'Gallery' },
     { href: '#reviews', text: 'Reviews' },
     { href: '#contact', text: 'Contact Us' },
@@ -37,32 +36,27 @@ export default function Navbar() {
   return (
     <>
       <motion.nav
-        className="flex justify-around items-center pt-2 pb-6 px-0 lg:px-20 2xl:px-10 bigger-screens:px-14 navbar-container"
+        className="flex justify-around items-center px-0 2xl:px-10 bigger-screens:px-14 navbar-container"
         id="home"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: 'linear', duration: 1.5 }}
       >
-        <ul className="hidden lg:flex gap-16 2xl:gap-20 bigger-screens:gap-10 text-xl 2xl:text-2xl bigger-screens:text-3xl">
-          {leftNavLinks.map((link, index) => (
+        <Image
+          width={600}
+          height={500}
+          alt=""
+          src={logoImage}
+          className="pt-6 -mx-20 lg:-mx-10 2xl:-mx-32 bigger-screens:-mx-0 mr-10 2xl:mr-44 bigger-screens:mr-96"
+        />
+        <ul className="hidden lg:flex -mt-10 mx-20 mr-4 gap-10 bigger-screens:gap-20 sm:text-sm xl:text-lg 2xl:text-xl bigger-screens:text-3xl">
+          {navLinks.map((link, index) => (
             <li className="list-none nav-link" key={index}>
               <a href={link.href}>{link.text}</a>
             </li>
           ))}
         </ul>
-        <div className={titan.className}>
-          <h1 className="text-amber-500 text-center text-6xl lg:text-7xl 2xl:text-8xl">
-            <span className="block">Strictly</span>
-            <span className="block">Paper</span>
-          </h1>
-        </div>
-        <ul className="hidden lg:flex gap-11 bigger-screens:gap-12 text-xl 2xl:text-2xl bigger-screens:text-3xl">
-          {rightNavLinks.map((link, index) => (
-            <li className="list-none nav-link" key={index}>
-              <a href={link.href}>{link.text}</a>
-            </li>
-          ))}
-        </ul>
+        <div className={titan.className}></div>
         <motion.ul
           className={`absolute lg:hidden w-full min-h-screen flex flex-col items-right gap-3 py-16 sm:py-8 px-4 text-right text-5xl sm:text-6xl bg-zinc-50 ${
             isOpen
@@ -72,7 +66,7 @@ export default function Navbar() {
           initial="hidden"
           animate={isOpen ? 'visible' : 'hidden'}
         >
-          {[...leftNavLinks, ...rightNavLinks].map((link, index) => (
+          {navLinks.map((link, index) => (
             <motion.div
               className={titan.className}
               key={index}
@@ -94,6 +88,7 @@ export default function Navbar() {
             aria-controls="navbar-dropdown-menu"
             aria-expanded={isOpen}
             type="button"
+            className="-mx-20"
           >
             <span
               className={`bg-zinc-950 block transition-all duration-700 ease-out
@@ -103,7 +98,7 @@ export default function Navbar() {
             ></span>
             <span
               className={`bg-zinc-950 block transition-all duration-700 ease-out
-         h-1 rounded-2xl ml-auto ${
+         h-1 rounded-2xl ml-auto  ${
            isOpen ? 'w-14 -rotate-45 -translate-y-0.5' : 'w-8 translate-y-0.5'
          }`}
             ></span>
