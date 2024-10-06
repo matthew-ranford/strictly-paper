@@ -42,10 +42,6 @@ export default function Gallery() {
       alt: 'Wallpaper | Wallpapering image eleven',
     },
     {
-      src: 'images/gallery-11.png',
-      alt: 'Wallpaper | Wallpapering image twelve',
-    },
-    {
       src: 'images/gallery-12.png',
       alt: 'Wallpaper | Wallpapering image thirteen',
     },
@@ -64,10 +60,6 @@ export default function Gallery() {
     {
       src: 'images/gallery-16.jpg',
       alt: 'Wallpaper | Wallpapering image seventeen',
-    },
-    {
-      src: 'images/gallery-17.jpg',
-      alt: 'Wallpaper | Wallpapering image eighteen',
     },
     {
       src: 'images/gallery-18.jpg',
