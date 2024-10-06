@@ -60,30 +60,43 @@ export const ImagesSlider = ({
       })
       .catch((error) => console.error('Failed to load images', error))
   }
+
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'ArrowRight') {
         handleNext()
+        resetAutoplay()
       } else if (event.key === 'ArrowLeft') {
         handlePrevious()
+        resetAutoplay()
       }
     }
 
     window.addEventListener('keydown', handleKeyDown)
 
-    // autoplay
+    // Autoplay
     let interval: any
-    if (autoplay) {
+
+    const startAutoplay = () => {
       interval = setInterval(() => {
         handleNext()
       }, 5000)
+    }
+
+    const resetAutoplay = () => {
+      clearInterval(interval)
+      startAutoplay()
+    }
+
+    if (autoplay) {
+      startAutoplay()
     }
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown)
       clearInterval(interval)
     }
-  }, [])
+  }, [autoplay])
 
   const slideVariants = {
     initial: {
