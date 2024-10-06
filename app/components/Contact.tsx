@@ -99,7 +99,7 @@ export default function Contact() {
               the links below!
             </p>
             <div className="text-amber-500 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight mb-5">
-              <a href="mailto:cherie@strictly-paper.nz">
+              <a href="mailto:admin@strictly-paper.nz">
                 admin@strictly-paper.nz
               </a>
               <span className="text-zinc-200 hidden sm:inline"> | </span>
