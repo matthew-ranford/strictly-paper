@@ -13,7 +13,10 @@ export default function Services() {
 
   return (
     <>
-      <main id="services" className="2xl:mt-14 bigger-screens:mt-32 pb-4">
+      <main
+        id="services"
+        className="sm:mt-10 lg:mt-0 2xl:mt-14 bigger-screens:mt-32 pb-4"
+      >
         <div className="text-right pt-8 lg:pt-12 pe-20 md:pe-32 lg:pe-20 bigger-screens:pe-56">
           <motion.div
             className={titan.className}
