@@ -12,18 +12,18 @@ export default function Reviews() {
   // InfiniteMovingCards
   const testimonials = [
     {
-      name: 'My company works closely with Strictly Paper and we have been impressed with their communication, efficency, work quality and professionalism.',
-      title: 'Nathan',
+      name: 'The company I work for works closely with Strictly Paper and we have been impressed with their communication, efficency, work quality and professionalism.',
+      title: 'Matthew',
       quote: '⭐⭐⭐⭐⭐',
     },
     {
-      name: ' We must say that the service was excellent, attendance to review the work and submit the quote was very fast, pricing extremely competitive and all site staff were friendly, time-efficient and left the areas clean and tidy when complete.',
-      title: 'PFMB Properties Ltd',
+      name: 'We had John come and do a wallpapering job in our grandkids bedroom. He did an amazing job which we absolutely love. We found John very professional and easy to communicate with. We would totally recommend John for any job big or small',
+      title: 'Bruce & Jenni Johnson',
       quote: '⭐⭐⭐⭐⭐',
     },
     {
-      name: 'I highly recommend Strictly Paper to anyone wanting wallpapering work carried out by a professional, competitive, competent and qualified company who offer advice and options, provide fast service and all works carried out are done to a high standard.',
-      title: 'Megan',
+      name: "We imported wallpaper from England, that arrived in one big roll. It had to be cut then matched. John did a marvellous job for us. He came the day before to lay it all out, then wallpapered the next day. The following day he came back to check that it looked OK. It looks amazing, to be honest, we can't even see the joins. John was great to deal with, very friendly and did not seem at all fazed at the prospect of this unusual wallpaper. He is a true craftsman, and we would not hesitate to recommend him to anyone who wants an excellent wallpaper job done by a professional and easy to deal with person.",
+      title: 'Andrew & Rose',
       quote: '⭐⭐⭐⭐⭐',
     },
   ]
