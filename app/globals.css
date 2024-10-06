@@ -97,6 +97,12 @@ body {
   object-fit: cover;
 }
 
+@media (max-width: 450px) {
+  .hero-screen-video {
+    opacity: 0.8;
+  }
+}
+
 .about-image {
   position: absolute;
   width: 80%;
