@@ -1,10 +1,11 @@
 'use client'
 
-import Image from 'next/image'
-import aboutImage from '../../public/images/about-image.png'
 import { titan } from '@/fonts'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+
+import Image from 'next/image'
+import aboutImage from '../../public/images/about-image.png'
 
 export default function About() {
   const [hasAnimated, setHasAnimated] = useState(false)
@@ -18,10 +19,10 @@ export default function About() {
             width="2732"
             height="1536"
             alt="John putting up wallpaper"
-            className="about-image"
+            className="about-image hidden md:block"
           />
         </div>
-        <div className="text-center pt-8 lg:pt-12 pl-24 md:pl-44 lg:pl-64 2xl:pl-72 bigger-screens:pl-96">
+        <div className="text-center pt-10 lg:pt-12 md:pl-44 lg:pl-64 2xl:pl-72 bigger-screens:pl-96">
           <motion.div
             className={titan.className}
             initial={{ opacity: 0, y: -5 }}
@@ -39,7 +40,7 @@ export default function About() {
           </motion.div>
         </div>
         <motion.div
-          className="pt-10 flex justify-end text-zinc-200 text-balance text-right lg:text-left text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight"
+          className="pt-10 flex justify-end text-zinc-200 text-balance text-center md:text-right lg:text-left text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight"
           initial={{ opacity: 0, y: -2 }}
           transition={{
             ease: 'easeInOut',
