@@ -59,7 +59,7 @@ export default function Navbar() {
         </ul>
         <div className={titan.className}></div>
         <motion.ul
-          className={`absolute lg:hidden w-full min-h-screen flex flex-col items-right gap-3 py-16 sm:py-8 px-4 text-right text-5xl sm:text-6xl bg-zinc-50 ${
+          className={`absolute lg:hidden w-full  flex flex-col items-right gap-3 py-16 sm:py-8 px-4 text-right text-5xl sm:text-6xl bg-zinc-50 ${
             isOpen
               ? 'top-36 animate-slideIn border-4 border-zinc-950 rounded-2xl'
               : 'hidden'

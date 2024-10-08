@@ -118,7 +118,7 @@ export default function Gallery() {
             </motion.div>
           </div>
           <ImagesSlider
-            className="h-[40rem] lg:h-[38rem] lg:w-[54.7rem] 2xl:h-[51rem] 2xl:w-[62.5rem] bigger-screens:h-[80rem] bigger-screens:w-[103rem]"
+            className="h-[40rem] lg:h-[38rem] w-auto lg:w-[54.7rem] 2xl:h-[51rem] 2xl:w-[62.5rem] bigger-screens:h-[80rem] bigger-screens:w-[103rem]"
             images={images}
           >
             <motion.div

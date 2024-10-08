@@ -1,12 +1,13 @@
 'use client'
 
-import Image from 'next/image'
-import residentialImage from '../../public/images/gallery-9.png'
-import commercialImage from '../../public/images/gallery-12.png'
 import { WobbleCard } from '@/components/ui/wobble-card'
 import { titan } from '@/fonts'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+
+import Image from 'next/image'
+import residentialImage from '../../public/images/gallery-9.png'
+import commercialImage from '../../public/images/gallery-12.png'
 
 export default function Services() {
   const [hasAnimated, setHasAnimated] = useState(false)

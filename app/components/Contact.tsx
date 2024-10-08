@@ -63,7 +63,7 @@ export default function Contact() {
 
   return (
     <>
-      <main id="contact" className="bg-zinc-900 pb-10">
+      <main id="contact" className="bg-zinc-900 pb-6">
         <motion.div
           className={titan.className}
           initial={{ opacity: 0, y: -5 }}
@@ -75,7 +75,7 @@ export default function Contact() {
             }
           }}
         >
-          <h1 className="pt-8 lg:pt-12 text-center text-amber-500 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl bigger-screens:ps-16 leading-none tracking-tight">
+          <h1 className="pt-8 lg:pt-12 text-center text-amber-500 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl ps-2 pe-2 bigger-screens:ps-16 leading-none tracking-tight">
             Get In Touch With Us!
           </h1>
         </motion.div>
@@ -222,6 +222,18 @@ export default function Contact() {
         <div className="pt-6 ps-4 pe-4">
           <p className="text-center text-sm text-amber-500">
             © 2024 Strictly Paper | All rights reserved | +64 27 383 5700
+          </p>
+        </div>
+        <div className="pt-4 ps-4 pe-4">
+          <p className="text-center text-xs italic text-zinc-200">
+            Website created by{' '}
+            <a
+              href="https://matthew-ranford.github.io/new-portfolio/"
+              target="_blank"
+              className="text-zinc-200 hover:text-amber-500 transition duration-1000"
+            >
+              Matthew Ranford
+            </a>
           </p>
         </div>
       </main>
