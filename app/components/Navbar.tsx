@@ -47,6 +47,7 @@ export default function Navbar() {
           width={600}
           height={500}
           alt="company logo"
+          loading="eager"
           src={logoImage}
           className="pt-6 -mx-20 lg:-mx-10 2xl:-mx-32 bigger-screens:-mx-0 mr-10 2xl:mr-44 bigger-screens:mr-96"
         />
