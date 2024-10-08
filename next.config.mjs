@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: 'http://strictly-paper.nz',
-  images: {
-    unoptimized: true,
-  },
+  assetPrefix: 'https://strictly-paper.nz',
 }
 
 export default nextConfig
