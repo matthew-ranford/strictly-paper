@@ -17,7 +17,7 @@ export default function Services() {
         id="services"
         className="sm:mt-10 lg:mt-0 2xl:mt-14 bigger-screens:mt-32 pb-4"
       >
-        <div className="text-right pt-8 lg:pt-12 pe-20 md:pe-32 lg:pe-20 bigger-screens:pe-56">
+        <div className="text-center md:text-right pt-8 lg:pt-12 pe-4 md:pe-32 lg:pe-20 bigger-screens:pe-56">
           <motion.div
             className={titan.className}
             initial={{ opacity: 0, y: -5 }}
@@ -58,11 +58,11 @@ export default function Services() {
           >
             <div className="max-w-md md:max-w-3xl lg:max-w-md bigger-screens:max-w-xl">
               <div className={titan.className}>
-                <h2 className="text-left text-balance text-5xl md:text-6xl lg:text-7xl tracking-[-0.015em] text-amber-500">
+                <h2 className="text-center md:text-left text-balance text-5xl md:text-6xl lg:text-7xl tracking-[-0.015em] text-amber-500">
                   Residential
                 </h2>
               </div>
-              <div className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
+              <div className="pt-4 px-2 text-center md:text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
                 <p className="pt-4">
                   John specializes in bringing life to residential spaces,
                   whether it&apos;s a cherished family home or a freshly built
@@ -87,7 +87,7 @@ export default function Services() {
               width={800}
               height={500}
               alt="Wallpaper | Wallpapering in a residential home"
-              className="absolute -right-4 inset-y-24 bigger-screens:inset-y-26 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
+              className="absolute -right-4 inset-y-24 bigger-screens:inset-y-26 lg:-right-[38%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden xl:block"
             />
           </WobbleCard>
           <WobbleCard
@@ -96,11 +96,11 @@ export default function Services() {
           >
             <div className="max-w-md md:max-w-3xl lg:max-w-md  bigger-screens:max-w-xl">
               <div className={titan.className}>
-                <h2 className="text-left text-balance text-5xl md:text-6xl lg:text-7xl tracking-[-0.015em] text-amber-500">
+                <h2 className="text-center md:text-left text-balance text-5xl md:text-6xl lg:text-7xl tracking-[-0.015em] text-amber-500">
                   Commercial
                 </h2>
               </div>
-              <div className="pt-4 px-2 text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
+              <div className="pt-4 px-2 text-center md:text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
                 <p>
                   Navigating the complexities of commercial projects requires a
                   skilled touch, and John excels in working around bustling
@@ -124,7 +124,7 @@ export default function Services() {
               width={800}
               height={500}
               alt="Wallpaper | Wallpapering for a commercial business"
-              className="absolute -right-4 inset-y-24 bigger-screens:inset-y-32 lg:-right-[39%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden lg:block"
+              className="absolute -right-4 inset-y-24 bigger-screens:inset-y-32 lg:-right-[39%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden xl:block"
             />
           </WobbleCard>
           <a href="#contact">
