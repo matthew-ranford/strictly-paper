@@ -48,7 +48,7 @@ export default function Navbar() {
           height={500}
           alt="company logo"
           src={logoImage}
-          className="pt-6 -mx-20 lg:-mx-10 2xl:-mx-32 bigger-screens:-mx-0 mr-10 2xl:mr-44 bigger-screens:mr-96 w-auto h-auto"
+          className="pt-6 -mx-20 lg:-mx-10 2xl:-mx-32 bigger-screens:-mx-0 mr-10 2xl:mr-44 bigger-screens:mr-96"
         />
         <ul className="hidden lg:flex -mt-10 mx-20 mr-4 gap-10 bigger-screens:gap-20 sm:text-sm xl:text-lg 2xl:text-xl bigger-screens:text-3xl">
           {navLinks.map((link, index) => (
