@@ -33,7 +33,7 @@ export default function Hero() {
         <div className="absolute">
           <div className="mt-36 sm:mt-44 md:mt-48 lg:mt-48 2xl:mt-72 md:max-w-3xl lg:max-w-6xl 2xl:max-w-screen-2xl px-6 md:px-4 lg:px-28 2xl:px-20 bigger-screens:px-60">
             <div className={titan.className}>
-              <h1 className="text-5xl md:text-5xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+              <h1 className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl  2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
                 Transform Your <FlipWords words={words} /> with Elegance
               </h1>
             </div>
