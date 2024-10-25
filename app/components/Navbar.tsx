@@ -49,9 +49,9 @@ export default function Navbar() {
           alt="company logo"
           loading="eager"
           src={logoImage}
-          className="pt-6 -mx-20 lg:-mx-10 2xl:-mx-32 bigger-screens:-mx-0 mr-10 2xl:mr-44 bigger-screens:mr-96"
+          className="pt-6 -mx-20 sm:-mx-44 md:-mx-52 lg:-mx-40 xl:-mx-10 2xl:-mx-32 bigger-screens:-mx-0 mr-10 2xl:mr-44 bigger-screens:mr-96"
         />
-        <ul className="hidden lg:flex -mt-10 mx-20 mr-4 gap-10 bigger-screens:gap-20 sm:text-sm xl:text-lg 2xl:text-xl bigger-screens:text-3xl">
+        <ul className="hidden xl:flex -mt-10 mx-20 mr-4 gap-10 bigger-screens:gap-20 sm:text-sm xl:text-lg 2xl:text-xl bigger-screens:text-3xl">
           {navLinks.map((link, index) => (
             <li className="list-none nav-link" key={index}>
               <a href={link.href}>{link.text}</a>
@@ -60,7 +60,7 @@ export default function Navbar() {
         </ul>
         <div className={titan.className}></div>
         <motion.ul
-          className={`absolute lg:hidden w-full  flex flex-col items-right gap-3 py-16 sm:py-8 px-4 text-right text-5xl sm:text-6xl bg-zinc-50 ${
+          className={`absolute xl:hidden w-full flex flex-col items-right gap-3 py-16 sm:py-8 px-4 text-right text-5xl sm:text-6xl bg-zinc-50 ${
             isOpen
               ? 'top-36 animate-slideIn border-4 border-zinc-950 rounded-2xl'
               : 'hidden'
@@ -83,7 +83,7 @@ export default function Navbar() {
             </motion.div>
           ))}
         </motion.ul>
-        <div className="lg:hidden flex">
+        <div className="xl:hidden flex">
           <button
             onClick={handleMenuClick}
             aria-label="button"
