@@ -83,7 +83,7 @@ export default function Gallery() {
                 }
               }}
             >
-              <h1 className="text-center text-amber-500 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight px-6 lg:px-0 lg:pe-32 2xl:pe-52 bigger-screens:pe-10 block bigger-screens:inline-block">
+              <h1 className="text-center text-amber-500 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight px-6 lg:pe-32 2xl:pe-52 bigger-screens:pe-10 block bigger-screens:inline-block">
                 Our{' '}
                 <span className="lg:block bigger-screens:inline-block">
                   Work!
@@ -91,6 +91,7 @@ export default function Gallery() {
               </h1>
             </motion.div>
             <motion.div
+              className="px-6"
               initial={{ opacity: 0, y: -2 }}
               transition={{
                 ease: 'easeInOut',
