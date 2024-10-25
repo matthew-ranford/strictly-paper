@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: 'https://strictly-paper.nz',
+  // Comment this out when working on development in localhost
+  // assetPrefix: 'https://strictly-paper.nz',
 }
 
 export default nextConfig
