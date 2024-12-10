@@ -46,14 +46,14 @@ export default function Hero() {
           <track src="" kind="captions" label="no-audio" />
         </video>
         <div className="absolute">
-          <div className="smaller-screens:mt-40 phone-screens:mt-52 mt-44 sm:mt-56 md:mt-48 lg:mt-44 2xl:mt-72 md:max-w-3xl lg:max-w-6xl 2xl:max-w-screen-2xl px-6 md:px-4 lg:px-28 2xl:px-20 bigger-screens:px-60">
+          <div className="smaller-screens:mt-40 phone-screens:mt-32 mt-44 sm:mt-56 md:mt-48 lg:mt-44 2xl:mt-72 md:max-w-3xl lg:max-w-6xl 2xl:max-w-screen-2xl px-6 md:px-4 lg:px-28 2xl:px-20 bigger-screens:px-60">
             <div className={titan.className}>
               <h1 className="smaller-screens:text-5xl text-6xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
                 Transform Your <FlipWords words={words} /> with Elegance
               </h1>
             </div>
           </div>
-          <div className="smaller-screens:mt-4 phone-screens:mt-20 mt-0 sm:mt-10 md:mt-4 lg:mt-0 smaller-screens:text-lg text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight pt-4 bigger-screens:pt-16 px-6 lg:px-[7.5rem] 2xl:px-20 bigger-screens:px-64 max-w-3xl md:max-w-lg lg:max-w-3xl bigger-screens:max-w-7xl">
+          <div className="smaller-screens:mt-4 phone-screens:mt-10 mt-0 sm:mt-10 md:mt-4 lg:mt-0 smaller-screens:text-lg text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight pt-4 bigger-screens:pt-16 px-6 lg:px-[7.5rem] 2xl:px-20 bigger-screens:px-64 max-w-3xl md:max-w-lg lg:max-w-3xl bigger-screens:max-w-7xl">
             <div className={interHeroText.className}>
               <p className="pe-4">
                 At Strictly Paper, we specialize in turning walls into works of
