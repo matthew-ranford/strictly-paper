@@ -38,6 +38,8 @@ const config: Config = {
 
       screens: {
         'bigger-screens': { min: '1800px' },
+        'smaller-screens': { max: '380px' },
+        'phone-screens': { min: '390px', max: '450px' },
       },
     },
   },

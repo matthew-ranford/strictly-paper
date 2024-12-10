@@ -3,9 +3,10 @@ import { inter } from '@/fonts'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Strictly Paper | Wallpapering Services',
+  title:
+    'Strictly Paper | Wallpapering Services | Wellington, Greater Wellington, Kapiti',
   description:
-    'Wallpapering services located in the Kapiti Region, working in the greater Wellington region',
+    'Wallpapering services located in the Kapiti Region, working in Wellington, and the greater Wellington region',
   keywords: [
     'wallpaper',
     'wallpapering',
@@ -16,8 +17,10 @@ export const metadata: Metadata = {
     'residential wallpaper',
     'commercial wallpaper',
     'wellington',
+    'wellington region',
     'greater wellington region',
     'kapiti',
+    'kapiti region',
   ],
   openGraph: {
     title: 'Strictly Paper | Wallpapering Services',

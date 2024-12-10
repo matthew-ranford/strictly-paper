@@ -20,7 +20,7 @@ export default function Hero() {
           loop={true}
           playsInline={true}
           muted={true}
-          className="hero-screen-video"
+          className="hero-screen-video hidden md:block"
           aria-label="video animation of interior home, no audio"
         >
           <source
@@ -30,15 +30,30 @@ export default function Hero() {
           />
           <track src="" kind="captions" label="no-audio" />
         </video>
+        <video
+          autoPlay={true}
+          loop={true}
+          playsInline={true}
+          muted={true}
+          className="hero-screen-video md:hidden"
+          aria-label="video animation of interior home, no audio"
+        >
+          <source
+            src="video/hero-video-mobile.mp4"
+            type="video/mp4"
+            className="hero-screen-video"
+          />
+          <track src="" kind="captions" label="no-audio" />
+        </video>
         <div className="absolute">
-          <div className="mt-36 sm:mt-44 md:mt-48 lg:mt-48 2xl:mt-72 md:max-w-3xl lg:max-w-6xl 2xl:max-w-screen-2xl px-6 md:px-4 lg:px-28 2xl:px-20 bigger-screens:px-60">
+          <div className="smaller-screens:mt-40 phone-screens:mt-52 mt-44 sm:mt-56 md:mt-48 lg:mt-44 2xl:mt-72 md:max-w-3xl lg:max-w-6xl 2xl:max-w-screen-2xl px-6 md:px-4 lg:px-28 2xl:px-20 bigger-screens:px-60">
             <div className={titan.className}>
-              <h1 className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl  2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+              <h1 className="smaller-screens:text-5xl text-6xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
                 Transform Your <FlipWords words={words} /> with Elegance
               </h1>
             </div>
           </div>
-          <div className="text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight pt-4 bigger-screens:pt-16 px-6 lg:px-[7.5rem] 2xl:px-20 bigger-screens:px-64 max-w-3xl md:max-w-lg lg:max-w-3xl bigger-screens:max-w-7xl">
+          <div className="smaller-screens:mt-4 phone-screens:mt-20 mt-0 sm:mt-10 md:mt-4 lg:mt-0 smaller-screens:text-lg text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight pt-4 bigger-screens:pt-16 px-6 lg:px-[7.5rem] 2xl:px-20 bigger-screens:px-64 max-w-3xl md:max-w-lg lg:max-w-3xl bigger-screens:max-w-7xl">
             <div className={interHeroText.className}>
               <p className="pe-4">
                 At Strictly Paper, we specialize in turning walls into works of
@@ -52,10 +67,10 @@ export default function Hero() {
             </div>
             <div className="pt-6 md:pt-8 lg:pt-6 2xl:pt-10 bigger-screens:pt-16">
               <div className={titan.className}>
-                <button className="border-2 rounded-xl bg-zinc-950 transition-all duration-1000 hover:bg-zinc-200 text-amber-500 hover:text-zinc-950 py-3 px-3 sm:px-4 sm:py-4">
+                <button className="border-2 rounded-xl bg-zinc-950 transition-all duration-1000 hover:bg-zinc-200 text-amber-500 hover:text-zinc-950 py-3 px-3 sm:px-4 sm:py-4 text-xl 2xl:text-2xl bigger-screens:text-3xl">
                   <a href="#services">Our Services</a>
                 </button>
-                <button className="border-2 rounded-xl bg-amber-500 text-zinc-950 transition-all duration-1000 hover:bg-zinc-200 hover:text-zinc-950 py-3 px-3 sm:px-4 sm:py-4 mx-2 lg:mx-4">
+                <button className="border-2 rounded-xl bg-amber-500 text-zinc-950 transition-all duration-1000 hover:bg-zinc-200 hover:text-zinc-950 py-3 px-3 sm:px-4 sm:py-4 mx-2 lg:mx-4 text-xl 2xl:text-2xl bigger-screens:text-3xl">
                   <a href="#contact">Get a Quote</a>
                 </button>
               </div>

@@ -12,7 +12,7 @@ export default function About() {
 
   return (
     <>
-      <main id="about" className="bg-zinc-900 pb-10 sm:mt-40 lg:mt-0 relative">
+      <main id="about" className="bg-zinc-900 pb-10 pt-10 sm:pt-0 sm:relative">
         <div>
           <Image
             src={aboutImage}
