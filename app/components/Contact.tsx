@@ -228,7 +228,7 @@ export default function Contact() {
           <p className="text-center text-xs italic text-zinc-200">
             Website created by{' '}
             <a
-              href="https://matthew-ranford.github.io/new-portfolio/"
+              href="https://matthewranford.com"
               target="_blank"
               className="text-zinc-200 hover:text-amber-500 transition duration-1000"
             >
