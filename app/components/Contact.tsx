@@ -75,7 +75,7 @@ export default function Contact() {
             }
           }}
         >
-          <h1 className="pt-8 lg:pt-12 text-center text-amber-500 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl ps-2 pe-2 bigger-screens:ps-16 leading-none tracking-tight">
+          <h1 className="pt-8 lg:pt-12 text-center text-amber-400 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-8xl ps-2 pe-2 bigger-screens:ps-16 leading-none tracking-tight">
             Get In Touch With Us!
           </h1>
         </motion.div>
@@ -91,14 +91,14 @@ export default function Contact() {
               }
             }}
           >
-            <h2 className="text-zinc-200 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight mb-5">
+            <h2 className="text-zinc-200 smaller-screens:text-lg text-xl 2xl:text-2xl leading-tight tracking-tight mb-5">
               Questions? Fill out the form to contact Strictly Paper!
             </h2>
-            <p className="text-zinc-200 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight mb-5">
+            <p className="text-zinc-200 smaller-screens:text-lg text-xl 2xl:text-2xl leading-tight tracking-tight mb-5">
               Alternatively, email or call Strictly Paper directly from one of
               the links below!
             </p>
-            <div className="text-amber-500 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight mb-5">
+            <div className="text-amber-400 smaller-screens:text-lg text-xl 2xl:text-2xl leading-tight tracking-tight mb-5">
               <a href="mailto:admin@strictly-paper.nz">
                 admin@strictly-paper.nz
               </a>
@@ -110,18 +110,18 @@ export default function Contact() {
                 +64 27 383 5700
               </a>
             </div>
-            <p className="text-zinc-200 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight mb-5">
+            <p className="text-zinc-200 smaller-screens:text-lg text-xl 2xl:text-2xl leading-tight tracking-tight mb-5">
               For any painting related enquiries, we recommend
               <a
                 href="https://www.atd-decorators.co.nz"
                 target="_blank"
-                className="text-amber-500"
+                className="text-amber-400"
               >
                 {' '}
                 ATD Decorators
               </a>{' '}
             </p>
-            <p className="text-zinc-200 text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight mb-5">
+            <p className="text-zinc-200 smaller-screens:text-lg text-xl 2xl:text-2xl leading-tight tracking-tight mb-5">
               We will get back to you as soon as possible!
             </p>
           </motion.div>
@@ -142,7 +142,7 @@ export default function Contact() {
                   htmlFor="name"
                   className="leading-7 text-sm text-zinc-300 ps-4"
                 >
-                  Name<span className="text-amber-500">*</span>
+                  Name<span className="text-amber-400">*</span>
                 </label>
                 <input
                   type="text"
@@ -151,7 +151,7 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={handleFormInputChange}
-                  className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-400 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
               <div className="relative mb-4">
@@ -159,7 +159,7 @@ export default function Contact() {
                   htmlFor="email"
                   className="leading-7 text-sm text-zinc-300 ps-4"
                 >
-                  Email Address<span className="text-amber-500">*</span>
+                  Email Address<span className="text-amber-400">*</span>
                 </label>
                 <input
                   type="email"
@@ -168,7 +168,7 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={handleFormInputChange}
-                  className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-400 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
               <div className="relative mb-4">
@@ -184,7 +184,7 @@ export default function Contact() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleFormInputChange}
-                  className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-400 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-950 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
               <div className="relative mb-4">
@@ -192,7 +192,7 @@ export default function Contact() {
                   htmlFor="message"
                   className="leading-7 text-sm text-zinc-300 ps-4"
                 >
-                  Message<span className="text-amber-500">*</span>
+                  Message<span className="text-amber-400">*</span>
                 </label>
                 <textarea
                   id="message"
@@ -200,12 +200,12 @@ export default function Contact() {
                   required
                   value={formData.message}
                   onChange={handleFormMessageChange}
-                  className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-zinc-950 py-1 px-3 resize-y leading-6 transition-colors duration-200 ease-in-out"
+                  className="w-11/12 md:w-full mx-4 bg-zinc-200 rounded border border-gray-500 focus:border-amber-400 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-zinc-950 py-1 px-3 resize-y leading-6 transition-colors duration-200 ease-in-out"
                 />
               </div>
               <div className="text-center">
                 <button
-                  className="border-2 rounded-xl border-zinc-950 bg-amber-500 transition-all duration-1000 hover:bg-zinc-950 hover:text-amber-500 px-3 py-3 mx-3 lg:mx-4"
+                  className=" rounded-xl bg-amber-400 transition-all duration-1000 hover:bg-zinc-900 hover:text-amber-400 px-10 py-3 mx-3 lg:mx-4"
                   type="submit"
                 >
                   Submit
@@ -214,13 +214,13 @@ export default function Contact() {
             </form>
           </motion.div>
         </div>
-        <div className="mt-20 w-20 h-20 bg-amber-500 rounded-full flex items-center justify-center mx-auto">
+        <div className="mt-20 w-20 h-20 bg-amber-400 rounded-full flex items-center justify-center mx-auto">
           <p className="text-zinc-950">
             <a href="#home">TO TOP</a>
           </p>
         </div>
         <div className="pt-6 ps-4 pe-4">
-          <p className="text-center text-sm text-amber-500">
+          <p className="text-center text-sm text-amber-400">
             © 2024 Strictly Paper | All rights reserved | +64 27 383 5700
           </p>
         </div>
@@ -230,7 +230,7 @@ export default function Contact() {
             <a
               href="https://matthewranford.com"
               target="_blank"
-              className="text-zinc-200 hover:text-amber-500 transition duration-1000"
+              className="text-zinc-200 hover:text-amber-400 transition duration-1000"
             >
               Matthew Ranford
             </a>

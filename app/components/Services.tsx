@@ -18,7 +18,7 @@ export default function Services() {
         id="services"
         className="sm:mt-10 lg:mt-0 2xl:mt-14 bigger-screens:mt-32 pb-4"
       >
-        <div className="text-center md:text-right pt-8 lg:pt-12 pe-4 md:pe-32 lg:pe-20 bigger-screens:pe-56">
+        <div className="text-center md:text-right pt-8 lg:pt-12 pe-4 md:pe-44 lg:pe-12 bigger-screens:pe-28">
           <motion.div
             className={titan.className}
             initial={{ opacity: 0, y: -5 }}
@@ -30,7 +30,7 @@ export default function Services() {
               }
             }}
           >
-            <h1 className="text-amber-500 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+            <h1 className="text-amber-400 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-8xl leading-none tracking-tight">
               Services We Offer!
             </h1>
           </motion.div>
@@ -46,7 +46,7 @@ export default function Services() {
             }
           }}
         >
-          <WobbleCard containerClassName="col-span-1 max-h-[100px] lg:max-h-[250px] lg:my-auto bg-amber-500">
+          <WobbleCard containerClassName="col-span-1 max-h-[100px] lg:max-h-[250px] lg:my-auto bg-amber-400">
             <div className={titan.className}>
               <h2 className="text-center text-xl md:text-2xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
                 Greater Wellington Region!
@@ -54,16 +54,16 @@ export default function Services() {
             </div>
           </WobbleCard>
           <WobbleCard
-            containerClassName="col-span-1 lg:col-span-2 h-full bg-zinc-900 lg:min-h-[300px]"
+            containerClassName="col-span-1 lg:col-span-2 h-full bg-zinc-900 lg:min-h-[300px] bigger-screens:max-h-[550px]"
             className=""
           >
             <div className="max-w-md md:max-w-3xl lg:max-w-md bigger-screens:max-w-xl">
               <div className={titan.className}>
-                <h2 className="text-center md:text-left text-balance text-5xl md:text-6xl lg:text-7xl tracking-[-0.015em] text-amber-500">
+                <h2 className="text-center md:text-left text-balance text-5xl md:text-6xl lg:text-7xl tracking-[-0.015em] text-amber-400">
                   Residential
                 </h2>
               </div>
-              <div className="pt-4 px-2 text-center md:text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
+              <div className="pt-4 px-2 text-center md:text-left text-xl 2xl:text-xl leading-tight tracking-tight text-zinc-200">
                 <p className="pt-4">
                   John specializes in bringing life to residential spaces,
                   whether it&apos;s a cherished family home or a freshly built
@@ -92,17 +92,17 @@ export default function Services() {
             />
           </WobbleCard>
           <WobbleCard
-            containerClassName="col-span-1 lg:col-span-2 h-full bg-zinc-900 lg:min-h-[300px]"
+            containerClassName="col-span-1 lg:col-span-2 h-full bg-zinc-900 lg:min-h-[300px] bigger-screens:max-h-[590px]"
             className=""
           >
-            <div className="max-w-md md:max-w-3xl lg:max-w-md  bigger-screens:max-w-xl">
+            <div className="max-w-md md:max-w-3xl lg:max-w-md  bigger-screens:max-w-xl bigger-screens:mt-10">
               <div className={titan.className}>
-                <h2 className="text-center md:text-left text-balance text-5xl md:text-6xl lg:text-7xl tracking-[-0.015em] text-amber-500">
+                <h2 className="text-center md:text-left text-balance text-5xl md:text-6xl lg:text-7xl tracking-[-0.015em] text-amber-400">
                   Commercial
                 </h2>
               </div>
-              <div className="pt-4 px-2 text-center md:text-left text-xl 2xl:text-xl bigger-screens:text-2xl leading-tight tracking-tight text-zinc-200">
-                <p>
+              <div className="pt-4 px-2 text-center md:text-left text-xl 2xl:text-xl leading-tight tracking-tight text-zinc-200">
+                <p className="pt-4">
                   Navigating the complexities of commercial projects requires a
                   skilled touch, and John excels in working around bustling
                   office spaces and staff with minimal disruption.
@@ -125,11 +125,11 @@ export default function Services() {
               width={800}
               height={500}
               alt="Wallpaper | Wallpapering for a commercial business"
-              className="absolute -right-4 inset-y-24 bigger-screens:inset-y-32 lg:-right-[39%] bigger-screens:-right-[25%] -bottom-10 object-contain hidden xl:block"
+              className="absolute -right-4 inset-y-24 bigger-screens:inset-y-36 lg:-right-[39%] bigger-screens:-right-[23%] -bottom-10 bigger-screens:top-[23.5%] object-contain hidden xl:block"
             />
           </WobbleCard>
           <a href="#contact">
-            <WobbleCard containerClassName="col-span-1 max-h-[250px] lg:my-44 bigger-screens:my-64 bg-amber-500">
+            <WobbleCard containerClassName="col-span-1 max-h-[250px] lg:my-44 bigger-screens:my-64 bg-amber-400">
               <div className={titan.className}>
                 <h2 className="text-center text-xl md:text-2xl lg:text-3xl text-zinc-950 bigger-screens:pt-6">
                   Contact us today!

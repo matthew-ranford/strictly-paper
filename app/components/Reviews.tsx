@@ -43,10 +43,10 @@ export default function Reviews() {
               }
             }}
           >
-            <h1 className="text-zinc-950 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+            <h1 className="text-zinc-950 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-8xl leading-none tracking-tight">
               What our{' '}
               <Highlight>
-                <span className="text-amber-500 mx-4">clients</span>
+                <span className="text-amber-400 mx-4">clients</span>
               </Highlight>{' '}
               have to say?
             </h1>

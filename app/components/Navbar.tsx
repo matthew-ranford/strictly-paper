@@ -49,12 +49,20 @@ export default function Navbar() {
           alt="company logo"
           loading="eager"
           src={logoImage}
-          className="pt-6 -mx-20 sm:-mx-44 md:-mx-52 lg:-mx-40 xl:mx-14 2xl:-mx-32 bigger-screens:mx-28 mr-10"
+          className="pt-6 -mx-20 sm:-mx-44 md:-mx-40 lg:-mx-40 xl:mx-14 2xl:-mx-32 bigger-screens:mx-28 mr-10"
         />
-        <ul className="hidden xl:flex -mt-10 mx-20 xl:ml-[16rem] 2xl:ml-96 gap-6 sm:text-sm xl:text-lg 2xl:text-xl pt-10">
+        <ul className="hidden xl:flex items-center -mt-10 mx-20 xl:ml-[16rem] 2xl:ml-96 gap-6 sm:text-sm xl:text-base 2xl:text-xl pt-10">
           {navLinks.map((link, index) => (
             <li className="list-none nav-link" key={index}>
-              <a href={link.href}>{link.text}</a>
+              {link.text === 'Contact Us' ? (
+                <a href={link.href}>
+                  <button className="rounded-xl bg-amber-300 text-zinc-950 transition-all duration-1000 hover:bg-amber-300/80 py-3 px-3 sm:px-8 sm:py-3 text-base">
+                    {link.text}
+                  </button>
+                </a>
+              ) : (
+                <a href={link.href}>{link.text}</a>
+              )}
             </li>
           ))}
         </ul>
@@ -76,9 +84,15 @@ export default function Navbar() {
               variants={navItemVariants}
             >
               <li className="list-none py-2">
-                <a href={link.href} onClick={handleMenuClick}>
-                  {link.text}
-                </a>
+                {link.text === 'Contact Us' ? (
+                  <a href={link.href} onClick={handleMenuClick}>
+                    <button className="rounded-xl bg-amber-300 text-zinc-950 transition-all duration-1000 hover:bg-amber-300/80 py-6 px-14 sm:px-8 sm:py-3 text-5xl">
+                      {link.text}
+                    </button>
+                  </a>
+                ) : (
+                  <a href={link.href}>{link.text}</a>
+                )}
               </li>
             </motion.div>
           ))}
@@ -90,7 +104,7 @@ export default function Navbar() {
             aria-controls="navbar-dropdown-menu"
             aria-expanded={isOpen}
             type="button"
-            className="-mx-20"
+            className="-mx-20 md:mx-0"
           >
             <span
               className={`bg-zinc-950 block transition-all duration-700 ease-out

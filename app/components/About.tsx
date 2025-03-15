@@ -22,7 +22,7 @@ export default function About() {
             className="about-image hidden md:block"
           />
         </div>
-        <div className="text-center pt-10 lg:pt-12 md:pl-44 lg:pl-64 2xl:pl-72 bigger-screens:pl-96">
+        <div className="text-center pt-10 lg:pt-12 md:pl-44 lg:pl-44 xl:pl-72 2xl:pl-72 bigger-screens:pl-[29rem]">
           <motion.div
             className={titan.className}
             initial={{ opacity: 0, y: -5 }}
@@ -34,13 +34,13 @@ export default function About() {
               }
             }}
           >
-            <h1 className="text-amber-500 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-9xl leading-none tracking-tight">
+            <h1 className="text-amber-400 text-5xl md:text-7xl lg:text-7xl 2xl:text-8xl bigger-screens:text-8xl leading-none tracking-tight">
               Who We Are!
             </h1>
           </motion.div>
         </div>
         <motion.div
-          className="pt-10 flex justify-end text-zinc-200 text-balance text-center md:text-right lg:text-left text-xl 2xl:text-2xl bigger-screens:text-3xl leading-tight tracking-tight"
+          className="pt-10 flex justify-end text-zinc-200 text-balance text-center md:text-right lg:text-left smaller-screens:text-lg text-xl 2xl:text-xl leading-tight tracking-tight"
           initial={{ opacity: 0, y: -2 }}
           transition={{
             ease: 'easeInOut',
@@ -54,7 +54,7 @@ export default function About() {
             }
           }}
         >
-          <p className="max-w-3xl 2xl:max-w-5xl bigger-screens:max-w-7xl ps-4 pe-8 lg:pe-20 bigger-screens:mr-10">
+          <p className="max-w-3xl md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-5xl ps-4 pe-8 lg:pe-10 xl:pe-20 ">
             With over four decades of expertise, John has mastered the art of
             turning walls into stunning canvases. From elegant residential
             spaces to vibrant commercial environments, he brings a meticulous
