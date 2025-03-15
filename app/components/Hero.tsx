@@ -67,10 +67,10 @@ export default function Hero() {
             </div>
             <div className="-px-4 pt-10 bigger-screens:pt-16">
               <div className={interHeroText.className}>
-                <button className="rounded-xl bg-amber-300 text-zinc-950 transition-all duration-1000 hover:bg-zinc-100 hover:text-zinc-950 py-3 px-3 sm:px-8 sm:py-4 text-base">
+                <button className="rounded-xl bg-amber-300 text-zinc-950 transition-all duration-1000 hover:bg-zinc-100 hover:text-zinc-950 py-4 px-7 sm:px-8 sm:py-4 text-base">
                   <a href="#contact">Get a quote</a>
                 </button>
-                <button className="border border-zinc-950 rounded-xl bg-transparent transition-all duration-1000 hover:bg-zinc-950 text-zinc-950 hover:text-zinc-100 py-3 px-3 sm:px-8 sm:py-4 mx-2 lg:mx-6 text-base">
+                <button className="border border-zinc-950 rounded-xl bg-transparent transition-all duration-1000 hover:bg-zinc-950 text-zinc-950 hover:text-zinc-100 py-4 px-7 sm:px-8 sm:py-4 mx-3 lg:mx-6 text-base">
                   <a href="#services">Our services</a>
                 </button>
               </div>
