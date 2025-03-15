@@ -61,7 +61,7 @@
 .hero-wrapper {
   position: relative;
   width: 100%;
-  height: 100vh;
+  /* height: 800px; */
 }
 
 .hero-screen-video {

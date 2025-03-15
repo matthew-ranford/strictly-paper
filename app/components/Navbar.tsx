@@ -44,14 +44,14 @@ export default function Navbar() {
         transition={{ ease: 'linear', duration: 1.5 }}
       >
         <Image
-          width={600}
-          height={500}
+          width={300}
+          height={300}
           alt="company logo"
           loading="eager"
           src={logoImage}
-          className="pt-6 -mx-20 sm:-mx-44 md:-mx-52 lg:-mx-40 xl:-mx-10 2xl:-mx-32 bigger-screens:-mx-0 mr-10 2xl:mr-44 bigger-screens:mr-96"
+          className="pt-6 -mx-20 sm:-mx-44 md:-mx-52 lg:-mx-40 xl:mx-14 2xl:-mx-32 bigger-screens:mx-28 mr-10"
         />
-        <ul className="hidden xl:flex -mt-10 mx-20 mr-4 gap-10 bigger-screens:gap-20 sm:text-sm xl:text-lg 2xl:text-xl bigger-screens:text-3xl">
+        <ul className="hidden xl:flex -mt-10 mx-20 xl:ml-[16rem] 2xl:ml-96 gap-6 sm:text-sm xl:text-lg 2xl:text-xl pt-10">
           {navLinks.map((link, index) => (
             <li className="list-none nav-link" key={index}>
               <a href={link.href}>{link.text}</a>

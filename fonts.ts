@@ -4,7 +4,7 @@ import { Titan_One, Inter } from 'next/font/google'
 export const titan = Titan_One({ subsets: ['latin'], weight: ['400'] })
 
 // Hero paragraph text
-export const interHeroText = Inter({ subsets: ['latin'], weight: ['500'] })
+export const interHeroText = Inter({ subsets: ['latin'], weight: ['300'] })
 
 // Main body text
-export const inter = Inter({ subsets: ['latin'], weight: ['400'] })
+export const inter = Inter({ subsets: ['latin'], weight: ['300'] })
